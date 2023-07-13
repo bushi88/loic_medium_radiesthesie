@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+    {% block title %}
+        Inscription
+    {% endblock %}
+
+    {% block body %}
+        <section class="container my-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="text-center">
+                                <i class="bi bi-person-plus"></i>
+                                Formulaire d'inscription
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            {{ form_start(registrationForm) }}
+                            <div class="d-flex flex-row justify-content-between mb-4">
+                                <div class="mb-4">
+                                    <span class="text-muted fs07">
+                                        Vous avez déjà un compte ?
+                                    </span>
+                                    <a href="{{ path('app_login') }}" class="text-success fs07 underline">Se connecter</a>
+                                </div>
+                                <div class="d-none d-sm-block">
+                                    <a href="{{ path('app_home') }}" class="btn-fill-light" title="Accueil" type="button">
+                                        <i class="bi bi-house bi-fill"></i>
+                                        retour à l'Accueil
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-4">
+                                    {{ form_row(registrationForm.gender, {'label': 'Genre'}) }}
+                                </div>
+                                <div class="col-8">
+                                    {{ form_row(registrationForm.lastname, {'label': 'Nom'}) }}
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    {{ form_row(registrationForm.firstname, {'label': 'Prénom'}) }}
+                                </div>
+                                <div class="col-6">
+                                    {{ form_row(registrationForm.username, {'label': 'Identifiant'}) }}
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-12">
+                                    {{ form_row(registrationForm.birthdate, {'label': 'Date de Naissance'}) }}
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-12">
+                                    {{ form_row(registrationForm.email, {'label': 'Email'}) }}
+                                    {% if form_errors(registrationForm.email) %}
+                                        <div class="alert alert-danger">
+                                            {{ form_errors(registrationForm.email) }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6 form-group">
+                                    {{ form_label(registrationForm.plainPassword, 'Mot de passe *') }}
+                                    <div class="input-group">
+                                        {{ form_widget(registrationForm.plainPassword) }}
+                                    </div>
+                                    {% if form_errors(registrationForm.plainPassword) %}
+                                        <div class="alert alert-danger">
+                                            {{ form_errors(registrationForm.plainPassword) }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row mb-2 mt-3">
+                                <div class="col-12 col-md-8">
+                                    {{ form_widget(registrationForm.agreeTerms) }}
+                                </div>
+                                <div class="col-12 col-md-4 text-end mt-3">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="{{ path('app_home') }}" class="btn-fill-light d-block d-sm-none" title="Accueil" type="button">
+                                            <i class="bi bi-house bi-fill"></i>
+                                            retour à l'Accueil
+                                        </a>
+                                        <button type="submit" class="btn-fill-dark ms-auto" name="register">S'inscrire</button>
+                                    </div>
+                                </div>
+                            </div>
+                            {{ form_end(registrationForm) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock %}

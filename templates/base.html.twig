@@ -3,26 +3,94 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			{% block title %}Welcome !{% endblock %}
+			{% block title %}
+				Welcome !
+			{% endblock %}
 		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/icofont.min.css') }}">
-		<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-        {% block stylesheets %}{% endblock %}
+		<link
+		rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		<!-- Include All CSS -->
+		<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}"/>
+		<link rel="stylesheet" href="{{ asset('assets/css/icofont.min.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/flaticon.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/boxicons.css') }}"/>
+
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.theme.default.min.css') }}"/>
+
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/lightcase.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/settings.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}"/>
+
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/preset.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/ignore_for_wp.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/theme.css') }}"/>
+		<link
+		rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}"/>
+
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="images/favicon.png"/>
+
+		<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"/>
+
 	</head>
 
-    <body>
-        {% include '_partials/top_header.html.twig' %}
-        {% include '_partials/header.html.twig' %}
+	<body>
+		<!-- Preloader Start -->
+		<div class="preloader">
+			<div class="la-ball-scale-multiple la-2x">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<!-- Preloader End -->
+		{% include '_partials/top_header.html.twig' %}
+		{% include '_partials/header.html.twig' %}
 
-        {% block body %}{% endblock %}
+		{% block body %}{% endblock %}
 
-        {% include '_partials/footer.html.twig' %}
+		{% include '_partials/footer.html.twig' %}
 
-        <script src="{{ ('assets/js/jquery.js') }}"></script>
-        <script src="{{ ('assets/js/bootstrap.bundle.min.js') }}"></script>
-        {% block javascripts %}{% endblock %}
-    </body>
+		<!-- Back To Top Start -->
+		<a href="#" id="backtotop">
+			<i class="bx bxs-arrow-to-top"></i>
+		</a>
+		<!-- Back To Top End -->
+
+		<!-- Include All JS -->
+		<script src="{{ ('assets/js/jquery.js') }}"></script>
+		<script src="{{ ('assets/js/bootstrap.bundle.min.js') }}"></script>
+		<script src="{{ ('assets/js/jquery-ui.js') }}"></script>
+		<script src="{{ ('assets/js/bootstrap.min.js') }}"></script>
+		<script src="{{ ('assets/js/owl.carousel.min.js') }}"></script>
+		<script src="{{ ('assets/js/jquery.shuffle.min.js') }}"></script>
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyBJtPMZ_LWZKuHTLq5o08KSncQufIhPU3o"></script>
+		<script src="{{ ('assets/js/gmaps.js') }}"></script>
+		<script src="{{ ('assets/js/jquery.plugin.min.js') }}"></script>
+		<script src="{{ ('assets/js/jquery.countdown.min.js') }}"></script>
+
+		<script src="{{ ('assets/js/jquery.appear.js') }}"></script>
+		<script src="{{ ('assets/js/lightcase.js') }}"></script>
+
+		<script src="{{ ('assets/js/jquery.themepunch.tools.min.js') }}"></script>
+		<script src="{{ ('assets/js/jquery.themepunch.revolution.min.js') }}"></script>
+
+		<!-- Rev slider Add on Start -->
+		<script src="{{ ('assets/js/extensions/revolution.extension.actions.min.js') }}"></script>
+		<script src="{{ ('assets/js/extensions/revolution.extension.carousel.min.js') }}"></script>
+		<script src="{{ ('assets/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
+		<script src="{{ ('assets/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
+		<script src="{{ ('assets/js/extensions/revolution.extension.migration.min.js') }}"></script>
+		<script src="{{ ('assets/js/extensions/revolution.extension.navigation.min.js') }}"></script>
+		<script src="{{ ('assets/js/extensions/revolution.extension.parallax.min.js') }}"></script>
+		<script src="{{ ('assets/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+		<script src="{{ ('assets/js/extensions/revolution.extension.video.min.js') }}"></script>
+		<!-- Rev slider Add on End -->
+
+		<script src="{{ ('assets/js/theme.js') }}"></script>
+
+		{% block javascripts %}{% endblock %}
+	</body>
 </html>

@@ -1,60 +1,83 @@
-<!-- Top Bar -->
-<section class="container-fluid top-bar sticky-top p-2" id="top-bar">
-	<div class="d-flex justify-content-between align-items-center">
-		<div class="d-flex flex-column flex-md-row">
-			<a href="#" class="me-3">
-				<i class="bi bi-envelope-fill me-1"></i>
-				loic@contact.com
-			</a>
-			<div>
-				<i class="bi bi-telephone-fill me-1"></i>
-				+33(0) 666.777.888
+<!-- Top Bar Start -->
+<section class="top_bar">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-lg-3 col-xl-2">
+				<div class="info_item">
+					<i class="bx bx-support"></i>
+					<h5>Free Call:</h5>
+					<h6 class="active">+00 123 456 789</h6>
+				</div>
 			</div>
-		</div>
-		<div class="connect-logos d-flex align-items-center ms-auto">
-			{% if app.user and app.user.isVerified %}
-				<div class="me-1">
-					{% if is_granted('ROLE_ADMIN') %}
-						<a href="{{ path('app_admin') }}" class="me-2" title="Tableau de bord" target="_blank">
-							<i class="icofont-speed-meter"></i>
-						</a>
-					{% endif %}
-					<a href="#" class="me-2" title="Compte">
-						<i class="bi bi-person bi-fill"></i>
-					</a>
-					<a href="{{ path('app_logout') }}" class="me-2" title="Déconnexion">
-						logout
+			<div class="col-md-3 col-lg-3 col-xl-2">
+				<div class="info_item">
+					<i class="bx bx-at"></i>
+					<h5>Email Us:</h5>
+					<h6>
+						<a href="#">Mail@Example.com</a>
+					</h6>
+				</div>
+			</div>
+			<div class="col-md-3 col-lg-3 col-xl-2 noPaddingRight">
+				<div class="info_item">
+					<i class="bx bxs-map"></i>
+					<h5>Visit Us:</h5>
+					<h6>7 King Street, London</h6>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-lg-3 col-xl-6">
+				<div class="bar_btns">
+					<a href="#request_quote_section" class="req_btn scroll_to_btn">
+						<span>Request a Quote</span>
+						<i class="bx bx-right-arrow-alt"></i>
 					</a>
 				</div>
-			{% else %}
-				<div class="me-1">
-					<a href="{{ path('app_login') }}" class="me-2" title="Connexion">
-						login
-					</a>
-					<a href="{{ path('app_register') }}" class="me-2" title="Inscription">
-						register
-					</a>
-				</div>
-			{% endif %}
-			<a href="{{ path('app_home') }}" class="me-2" title="Accueil">
-				Accueil
-			</a>
-		</div>
-		<div id="welcome" class="container-fluid list-group-item-primary ps-2">
-			{% if app.user %}
-				<p class="">
-					Bienvenue
-					<span class="fw-bold my-2">
-						{{app.user.firstname}}
-						{{app.user.lastname}},
-					</span>
-					Vous êtes connecté en tant que
-					<span class="fw-bold my-2">
-						{{app.user.username}},
-						{{ app.user.userIdentifier }}
-					</span>
-				</p>
-			{% endif %}
+			</div>
 		</div>
 	</div>
 </section>
+<!-- Top Bar End -->
+
+<!-- Bar test Start (admin, login, logout...) -->
+<section id="welcome" class="container-fluid row">
+	<div class="col-10 d-flex justify-content-start align-items-center">
+		{% if app.user %}
+			<p>
+				Bienvenue
+				<strong>
+					{{app.user.firstname}}
+					{{app.user.lastname}},
+				</strong>
+				Vous êtes connecté en tant que
+				<strong>
+					{{app.user.username}},
+					{{ app.user.userIdentifier }}
+				</strong>
+			</p>
+		{% endif %}
+	</div>
+	<div class="col-2 d-flex justify-content-end align-items-center">
+		{% if app.user and app.user.isVerified %}
+			{% if is_granted('ROLE_ADMIN') %}
+				<a href="{{ path('app_admin') }}" class="info_item" title="Tableau de bord" target="_blank">
+					<i class="bx bx-bar-chart-alt"></i>
+				</a>
+			{% endif %}
+			<a href="{{ path('app_logout') }}" class="info_item" title="Déconnexion">
+				<i class="bx bx-log-out"></i>
+			</a>
+		{% else %}
+			<a href="{{ path('app_login') }}" class="info_item" title="Connexion">
+				<i class="bx bx-log-in"></i>
+			</a>
+			<a href="{{ path('app_register') }}" class="info_item" title="Inscription">
+				<i class="bx bx-user-plus"></i>
+			</a>
+		{% endif %}
+		<a href="{{ path('app_home') }}" class="info_item" title="Accueil">
+			<i class="bx bx-home"></i>
+		</a>
+	</div>
+</section>
+<!-- Bar test End (admin, login, logout...) -->

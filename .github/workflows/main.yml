@@ -1,0 +1,15 @@
+#Déploiment en continue vers un serveur de test chez planethoster
+name: CI
+on:
+  push:
+    branches: [ master ]  # Déclenche le workflow uniquement lors d'un push sur la branche master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      SSH_APP_PASS: ${{ secrets.SSH_APP_PASS }}
+
+    steps:
+    - uses: actions/checkout@v2

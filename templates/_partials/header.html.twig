@@ -4,8 +4,8 @@
 		<div class="row">
 			<div class="col-md-5 col-lg-3">
 				<div class="logo_01">
-					<a href="index.html">
-						<img src="{{ asset('assets/images/logo.png') }}" alt="Financeya"/>
+					<a href="{{ path('app_home') }}">
+						<img src="{{ asset('assets/images/logo.png') }}" alt="logo"/>
 					</a>
 				</div>
 			</div>
@@ -17,188 +17,33 @@
 					</div>
 					<ul>
 						<li class="current-menu-item menu-item-has-children">
-							<a href="index.html">Home</a>
+							<a href="{{ path('app_home') }}">Accueil</a>
 							<ul class="sub-menu">
-								<li>
-									<a href="index.html">Mulitpage 01</a>
-								</li>
-								<li>
-									<a href="index2.html">Multipage 02</a>
-								</li>
-								<li>
-									<a href="index3.html">Multipage 03</a>
-								</li>
-								<li>
-									<a href="index4.html">Onepage Version</a>
-								</li>
+								<li></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="#">Company</a>
+							<a href="#">À propos</a>
 							<ul class="sub-menu">
-								<li>
-									<a href="about_us.html">About Us</a>
-								</li>
-								<li>
-									<a href="why_choose_us.html">Why Choose Us</a>
-								</li>
-								<li>
-									<a href="meet_our_advisor.html">Meet Our Advisor</a>
-								</li>
-								<li>
-									<a href="award_and_recognition.html">Award & Recognition</a>
-								</li>
-								<li>
-									<a href="pricing_table.html">Pricing Table</a>
-								</li>
-								<li>
-									<a href="help_and_faqs.html">Help & FAQs</a>
-								</li>
-								<li class="menu-item-has-children">
-									<a href="#">Utility Pages</a>
-									<ul class="sub-menu">
-										<li>
-											<a href="coming_soon.html">Coming Soon</a>
-										</li>
-										<li>
-											<a href="maintenance.html">Maintenance Page</a>
-										</li>
-										<li>
-											<a href="404.html">404 Page</a>
-										</li>
-									</ul>
-								</li>
+								<li></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="#">Case</a>
+							<a href="#">Services</a>
 							<ul class="sub-menu">
-								<li>
-									<a href="case_studies.html">Case Studies One</a>
-								</li>
-								<li>
-									<a href="case_studies2.html">Case Studies Two</a>
-								</li>
-								<li>
-									<a href="single_case_studies.html">Single Case Study</a>
-								</li>
+								<li></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="#">Service</a>
+							<a href="#">Blog</a>
 							<ul class="sub-menu">
-								<li>
-									<a href="our_services.html">Our Services One</a>
-								</li>
-								<li>
-									<a href="our_services2.html">Our Services Two</a>
-								</li>
-								<li>
-									<a href="our_services3.html">Our Services Three</a>
-								</li>
-								<li>
-									<a href="single_service.html">Single Service</a>
-								</li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children">
-							<a href="#">News</a>
-							<ul class="sub-menu">
-								<li>
-									<a href="blog_standard.html">Blog Standard</a>
-								</li>
-								<li>
-									<a href="blog_grid.html">Blog Grid</a>
-								</li>
-								<li>
-									<a href="single_blog_post.html">Blog Single Post</a>
-								</li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children">
-							<a href="#">Shop</a>
-							<ul class="sub-menu">
-								<li>
-									<a href="shop_product.html">Shop Products</a>
-								</li>
-								<li>
-									<a href="shop_product_left_sidebar.html">Products Left Bar</a>
-								</li>
-								<li>
-									<a href="shop_product_right_sidebar.html">Products Right Bar</a>
-								</li>
-								<li>
-									<a href="single_shop_product.html">Single Product</a>
-								</li>
+								<li></li>
 							</ul>
 						</li>
 						<li>
-							<a href="contact_us.html">Contact Us</a>
+							<a href="contact_us.html">Contact</a>
 						</li>
 					</ul>
-					<div class="access_btns">
-						<a href="#" class="src_btn">
-							<i class="bx bx-search"></i>
-						</a>
-						<div class="cart_btn">
-							<a href="#">
-								<i class="bx bx-shopping-bag"></i>
-								<span>3</span>
-							</a>
-							<div class="mini_cart">
-								<div class="mc_item">
-									<img src="{{ asset('assets/images/cart/1.jpg') }}" alt=""/>
-									<h4>
-										<a href="#">The Wisdom of Finance</a>
-									</h4>
-									<div class="product_price clearfix">
-										<span class="price">
-											<span>
-												<span>$</span>19.00</span>
-										</span>
-									</div>
-									<a href="#" class="remove_cart"></a>
-								</div>
-								<div class="mc_item">
-									<img src="{{ asset('assets/images/cart/2.jpg') }}" alt=""/>
-									<h4>
-										<a href="#">Wealth Hacking Secrets</a>
-									</h4>
-									<div class="product_price clearfix">
-										<span class="price">
-											<span>
-												<span>$</span>41.00</span>
-										</span>
-									</div>
-									<a href="#" class="remove_cart"></a>
-								</div>
-								<div class="mc_item">
-									<img src="{{ asset('assets/images/cart/3.jpg') }}" alt=""/>
-									<h4>
-										<a href="#">Health Care Finance</a>
-									</h4>
-									<div class="product_price clearfix">
-										<span class="price">
-											<span>
-												<span>$</span>52.00</span>
-										</span>
-									</div>
-									<a href="#" class="remove_cart"></a>
-								</div>
-								<div class="clearfix"></div>
-								<div class="total_price">Subtotal:
-									<span class="price">
-										<span>
-											<span>$</span>112.00</span>
-									</span>
-								</div>
-								<div class="cart_buttons clearfix">
-									<a href="#">Checkout</a>
-									<a href="#">View Cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
 				</nav>
 			</div>
 		</div>

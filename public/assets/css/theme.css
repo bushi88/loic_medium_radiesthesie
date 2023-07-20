@@ -290,7 +290,7 @@ License URI:
 }
 .logo_01{
     position: relative;
-    padding: 32px 0 31px;
+    padding: 0px;
 }
 .logo_01 img{
     height: 37px;
@@ -909,7 +909,7 @@ License URI:
 }
 .logo_02 img,
 .logo_01 img{
-    height: 37px;
+    height: 110px;
     width: auto;
 }
 .dark_head.info_item{
@@ -1373,12 +1373,12 @@ License URI:
     -moz-animation-name: anim_btt;
     -o-animation-name: anim_btt;
     animation-name: anim_btt;
-    
+
     -webkit-animation-duration: .3s;
     -moz-animation-duration: .3s;
     -o-animation-duration: .3s;
     animation-duration: .3s;
-    
+
     opacity: 1;
 }
 @keyframes anim_btt {
@@ -1679,7 +1679,7 @@ License URI:
 }
 .service_02 h3 a:hover{
     color: #d9480f;
-} 
+}
 .service_02 p{
     word-break: break-all;
     margin: 0 0 20px;
@@ -1781,13 +1781,13 @@ License URI:
     -moz-appearance: none;
     background: url(../images/select_arrow.png) no-repeat calc(100% - 20px) center #fff;
 }
-.quote_form input[type="text"]::-moz-placeholder, 
+.quote_form input[type="text"]::-moz-placeholder,
 .quote_form input[type="email"]::-moz-placeholder,
 .quote_form input[type="number"]::-moz-placeholder,
 .quote_form input[type="tel"]::-moz-placeholder,
 .quote_form textarea::-moz-placeholder,
 
-.quote_form_2 input[type="text"]::-moz-placeholder, 
+.quote_form_2 input[type="text"]::-moz-placeholder,
 .quote_form_2 input[type="email"]::-moz-placeholder,
 .quote_form_2 input[type="number"]::-moz-placeholder,
 .quote_form_2 input[type="tel"]::-moz-placeholder,
@@ -1795,13 +1795,13 @@ License URI:
     color: #868e96;
     opacity: 1;
 }
-.quote_form input[type="text"]::-ms-input-placeholder, 
+.quote_form input[type="text"]::-ms-input-placeholder,
 .quote_form input[type="email"]::-ms-input-placeholder,
 .quote_form input[type="number"]::-ms-input-placeholder,
 .quote_form input[type="tel"]::-ms-input-placeholder,
 .quote_form textarea::-ms-input-placeholder,
 
-.quote_form_2 input[type="text"]::-ms-input-placeholder, 
+.quote_form_2 input[type="text"]::-ms-input-placeholder,
 .quote_form_2 input[type="email"]::-ms-input-placeholder,
 .quote_form_2 input[type="number"]::-ms-input-placeholder,
 .quote_form_2 input[type="tel"]::-ms-input-placeholder,
@@ -1809,13 +1809,13 @@ License URI:
     color: #868e96;
     opacity: 1;
 }
-.quote_form input[type="text"]::-webkit-input-placeholder, 
+.quote_form input[type="text"]::-webkit-input-placeholder,
 .quote_form input[type="email"]::-webkit-input-placeholder,
 .quote_form input[type="number"]::-webkit-input-placeholder,
 .quote_form input[type="tel"]::-webkit-input-placeholder,
 .quote_form textarea::-webkit-input-placeholder,
 
-.quote_form_2 input[type="text"]::-webkit-input-placeholder, 
+.quote_form_2 input[type="text"]::-webkit-input-placeholder,
 .quote_form_2 input[type="email"]::-webkit-input-placeholder,
 .quote_form_2 input[type="number"]::-webkit-input-placeholder,
 .quote_form_2 input[type="tel"]::-webkit-input-placeholder,
@@ -1848,7 +1848,7 @@ License URI:
     position: relative;
     z-index: 2;
 }
-.quote_form button:before, 
+.quote_form button:before,
 .quote_form_2 button:before{
     content: '';
     position: absolute;
@@ -1955,7 +1955,7 @@ License URI:
     max-width: 100%;
     display: inline-block !important;
     opacity: .5;
-    
+
     transition: all ease-in-out 300ms;
     -moz-transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
@@ -2855,7 +2855,7 @@ License URI:
     left: -2px;
     top: 1px;
     color: inherit;
-    
+
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
     -webkit-transition: all ease 300ms;
@@ -2925,7 +2925,7 @@ License URI:
 .subscribe_content form button:hover{
     background: #212529;
 }
-.subscribe_content form input[type='email']:focus, 
+.subscribe_content form input[type='email']:focus,
 .subscribe_content form button:focus{
     outline: 0;
     box-shadow: none;
@@ -3522,7 +3522,7 @@ License URI:
 .fnc_accordion .card-body p{
     margin-bottom: 15px;
 }
-.fnc_accordion .card-body p:last-of-type, 
+.fnc_accordion .card-body p:last-of-type,
 .fnc_accordion .card-body p:last-child{
     margin-bottom: 0;
 }

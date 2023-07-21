@@ -40,14 +40,14 @@
 								<li></li>
 							</ul>
 						</li>
-                        <li class="menu-item-has-children">
+						<li class="menu-item-has-children">
 							<a href="#">Horoscope</a>
 							<ul class="sub-menu">
-								<li></li>
+								{{ render(controller('App\\Controller\\ZodiaqMenuController::index')) }}
 							</ul>
 						</li>
 						<li>
-							<a href="contact_us.html">Contact</a>
+							<a href="#">Contact</a>
 						</li>
 					</ul>
 				</nav>

@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Horoscope
+{% endblock %}
+
+{% block body %}
+	<h1>
+		Horoscope du jour pour {{ slug }}
+	</h1>
+
+	{% if horoscopeData is not empty %}
+		<ul>
+			{% for horoscope in horoscopeData %}
+				<li>
+					<strong>{{ horoscope.title }}</strong><br>
+					{{ horoscope.description }}<br>
+					Date de publication :
+					{{ horoscope.pubDate|date('d/m/Y H:i') }}<br>
+					Lien :
+					<a href="{{ horoscope.link }}">{{ horoscope.link }}</a>
+				</li>
+				<br>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>Aucune donnée d'horoscope disponible pour {{ slug }}.</p>
+	{% endif %}
+{% endblock %}

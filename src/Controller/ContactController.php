@@ -36,12 +36,12 @@ class ContactController extends AbstractController
         }
 
         if ($form->isSubmitted() && !$form->isValid()) {
-            $this->addFlash('danger', 'Le formulaire contient une ou plusieurs erreurs et n\'a donc pas pu être envoyé. Veuillez corriger et réessayer svp ');
+            $this->addFlash('danger', 'Le formulaire contient une ou plusieurs erreurs et n\'a pas pu être envoyé. Veuillez corriger et réessayer svp ');
             return $this->redirectToRoute('app_contact');
         }
 
         return $this->render('contact/index.html.twig', [
-            'form' => $form->createView(),
+            'contactForm' => $form->createView(),
         ]);
     }
 }

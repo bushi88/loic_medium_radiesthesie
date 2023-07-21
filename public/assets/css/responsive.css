@@ -47,12 +47,12 @@ License URI:
         padding: 73px 15px 40px;
     }
     .service_02_slider.owl-carousel .owl-nav button.owl-prev,
-    .testimonial_slider_01.owl-carousel .owl-nav button.owl-prev, 
+    .testimonial_slider_01.owl-carousel .owl-nav button.owl-prev,
     .service_01_slider.owl-carousel .owl-nav button.owl-prev{
         left: -5px;
     }
     .service_02_slider.owl-carousel .owl-nav button.owl-next,
-    .testimonial_slider_01.owl-carousel .owl-nav button.owl-next, 
+    .testimonial_slider_01.owl-carousel .owl-nav button.owl-next,
     .service_01_slider.owl-carousel .owl-nav button.owl-next{
         right: -5px;
     }
@@ -116,9 +116,9 @@ License URI:
         padding-right: 25px;
         padding-left: 25px;
     }
-    .gallery_images a:nth-child(3), 
-    .gallery_images a:nth-child(6), 
-    .gallery_images a:nth-child(9), 
+    .gallery_images a:nth-child(3),
+    .gallery_images a:nth-child(6),
+    .gallery_images a:nth-child(9),
     .gallery_images a:nth-child(12) {
         margin-right: 2px;
     }
@@ -163,11 +163,11 @@ License URI:
     .fact_section{
         padding-bottom: 20px;
     }
-    .testimonial_slider_01.owl-carousel .owl-nav button.owl-prev, 
+    .testimonial_slider_01.owl-carousel .owl-nav button.owl-prev,
     .service_01_slider.owl-carousel .owl-nav button.owl-prev{
         left: -5px;
     }
-    .testimonial_slider_01.owl-carousel .owl-nav button.owl-next, 
+    .testimonial_slider_01.owl-carousel .owl-nav button.owl-next,
     .service_01_slider.owl-carousel .owl-nav button.owl-next{
         right: -5px;
     }
@@ -256,13 +256,13 @@ License URI:
         padding-bottom: 0;
         border-bottom: none;
         background: transparent;
-        
+
         display: none;
 
         transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -webkit-transform: translate3d(0, 0, 0);
-        
+
         transition: none;
         -moz-transition: none;
         -webkit-transition: none;
@@ -284,7 +284,7 @@ License URI:
         cursor: pointer;
         z-index: 9;
         padding: 2px 0;
-        
+
         transition: all ease 300ms;
         -moz-transition: all ease 300ms;
         -webkit-transition: all ease 300ms;
@@ -431,9 +431,9 @@ License URI:
         padding-right: 20px;
         padding-left: 20px;
     }
-    .gallery_images a:nth-child(3), 
-    .gallery_images a:nth-child(6), 
-    .gallery_images a:nth-child(9), 
+    .gallery_images a:nth-child(3),
+    .gallery_images a:nth-child(6),
+    .gallery_images a:nth-child(9),
     .gallery_images a:nth-child(12) {
         margin-right: 2px;
     }

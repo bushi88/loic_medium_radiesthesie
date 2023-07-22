@@ -4,26 +4,63 @@
 	Horoscope
 {% endblock %}
 
-{% block body %}
-	<h1>
-		Horoscope du jour pour {{ slug }}
-	</h1>
 
-	{% if horoscopeData is not empty %}
-		<ul>
-			{% for horoscope in horoscopeData %}
-				<li>
-					<strong>{{ horoscope.title }}</strong><br>
-					{{ horoscope.description }}<br>
-					Date de publication :
-					{{ horoscope.pubDate|date('d/m/Y H:i') }}<br>
-					Lien :
-					<a href="{{ horoscope.link }}">{{ horoscope.link }}</a>
-				</li>
-				<br>
-			{% endfor %}
-		</ul>
-	{% else %}
-		<p>Aucune donnée d'horoscope disponible pour {{ slug }}.</p>
-	{% endif %}
-{% endblock %}
+{% block body %}
+	<h1>Horoscope du jour pour le signe
+		{{ slug }}</h1>
+
+	<section class="comon_section blog_page">
+		<div class="container">
+			<h1>
+				Horoscope du jour pour
+				{{ slug }}
+			</h1>
+			<div class="row">
+				{% if horoscopeData is not empty %}
+					{% for horoscope in horoscopeData %}
+						<div class="col-lg-4 col-md-6">
+							<div class="blog_01">
+								<div class="b01_thumb">
+									<img src="images/blog/1.jpg" alt=""/>
+								</div>
+								<div class="b01_det">
+									<div class="b01_meta">
+										<span>
+											<i class="bx bxs-time-five"></i>
+											<a href="#">{{ horoscope.pubDate|date('d/m/Y H:i') }}</a>
+										</span>
+										<span class="b01m_com">
+											<i class="bx bxs-comment-dots"></i>
+											<a href="#">3 Comments</a>
+										</span>
+									</div>
+									<h3>
+										<a href="single_blog_post.html">{{ horoscope.title | raw }}</strong>
+										<a href="single_blog_post.html">{{ horoscope.description | raw }}</strong>
+									</a>
+								</h3>
+								<a href="single_blog_post.html" class="learn_more_lnk">Read More</a>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>Aucune donnée d'horoscope disponible pour
+				{{ slug }}.</p>
+		{% endif %}
+		<div class="col-lg-12 pt40">
+			<div class="fnc_pagination">
+				<a href="#" class="prevs">
+					<i class="bx bx-left-arrow-alt"></i>
+				</a>
+				<a href="#">1</a>
+				<span class="current">2</span>
+				<a href="#">3</a>
+				<a href="#" class="nexts">
+					<i class="bx bx-right-arrow-alt"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div></section>{% endblock %}

@@ -17,7 +17,7 @@ class ZodiaqController extends AbstractController
         $this->horoscopeService = $horoscopeService;
     }
 
-    #[Route('/zodiaq/{slug}', name: 'app_zodiaq')]
+    #[Route('/zodiac/{slug}', name: 'app_zodiaq')]
     public function index(Request $request, string $slug): Response
     {
         // Récupérer l'horoscope quotidien détaillé pour le signe spécifié

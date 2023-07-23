@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ slug }}
+{% endblock %}
+
+{% block body %}
+	<div class="container-fluid zodiaq_container py-4">
+
+		<h1 class="text-center my-5">
+			{{ slug | capitalize }}
+		</h1>
+
+		<div class="container">
+			{% if horoscopeData is not empty %}
+				{% for horoscope in horoscopeData %}
+					<h2 class="text-white">Horoscope hebdomadaire<br>{{ horoscope.title }}</h2>
+					<p>
+						{{ horoscope.description | raw }}
+					</p>
+					<p class="text-white">Date de publication :
+						{{ horoscope.pubDate|date('d/m/Y H:i') }}
+					</p>
+				{% endfor %}
+			{% else %}
+				<p>Aucune donnée d'horoscope disponible pour
+					{{ slug | capitalize }}.</p>
+			{% endif %}
+		</div>
+
+	</div>
+{% endblock %}

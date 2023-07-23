@@ -1,9 +1,9 @@
 /*
-Theme Name: Financeya
-Theme URI: http://themewar.com/html/financeya/
+Theme Name: dowsing
+Theme URI: http://themewar.com/html/dowsing/
 Author: ThemeWar
 Author URI: http://themewar.com/
-Description: Financeya - Consulting, Finance & Accounting HTML Template.
+Description: dowsing - Consulting, Finance & Accounting HTML Template.
 Version: 1.0
 License:
 License URI:

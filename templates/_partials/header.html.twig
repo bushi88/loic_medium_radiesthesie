@@ -29,22 +29,13 @@
 							</ul>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="#">Services</a>
-							<ul class="sub-menu">
-								<li></li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children">
 							<a href="#">Blog</a>
 							<ul class="sub-menu">
 								<li></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="#">Horoscope</a>
-							<ul class="sub-menu">
-								{{ render(controller('App\\Controller\\ZodiaqMenuController::index')) }}
-							</ul>
+							<a href="{{ path('app_zodiaq_all') }}">Horoscope</a>
 						</li>
 						<li>
 							<a href="#">Contact</a>

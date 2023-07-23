@@ -1,9 +1,9 @@
 /*
-Theme Name: Financeya
-Theme URI: http://themewar.com/html/financeya/
+Theme Name: dowsing
+Theme URI: http://themewar.com/html/dowsing/
 Author: ThemeWar
 Author URI: http://themewar.com/
-Description: Financeya - Consulting, Finance & Accounting HTML Template.
+Description: dowsing - Consulting, Finance & Accounting HTML Template.
 Version: 1.0
 License:
 License URI:
@@ -28,11 +28,13 @@ License URI:
 /*------------------------------------------------------------------------------
 / 2. Basic Typography
 ------------------------------------------------------------------------------*/
-body,html{
+body,
+html {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -40,32 +42,45 @@ body{
     letter-spacing: 0;
     font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #212529;
     font-weight: 600;
     line-height: 1.5;
     margin: 0 0 15px;
 }
-p{
+
+p {
     font-family: 'Roboto', sans-serif;
     margin: 0 0 10px;
 }
-a{
+
+a {
     color: #212529;
     text-decoration: none;
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
     -webkit-transition: all ease 300ms;
 }
-a:hover{
+
+a:hover {
     color: #d9480f;
     text-decoration: none;
     outline: 0;
 }
-a:focus{
+
+a:focus {
     outline: 0;
 }
-.fnc_btn, button.fnc_btn, input[type="submit"].fnc_btn{
+
+.fnc_btn,
+button.fnc_btn,
+input[type="submit"].fnc_btn {
     background: #212529;
     color: #FFF;
     font-size: 14px;
@@ -83,10 +98,12 @@ a:focus{
     -webkit-transition: all ease 300ms;
     overflow: hidden;
 }
-.fnc_btn span{
+
+.fnc_btn span {
     position: relative;
     z-index: 2;
 }
+
 .fnc_btn:before {
     content: '';
     position: absolute;
@@ -96,45 +113,55 @@ a:focus{
     height: 100%;
     width: 0;
     z-index: 2;
-    transition: width .3s cubic-bezier(.25,.8,.25,1) 0s;
-    -moz-transition: width .3s cubic-bezier(.25,.8,.25,1) 0s;
-    -webkit-transition: width .3s cubic-bezier(.25,.8,.25,1) 0s;
+    transition: width .3s cubic-bezier(.25, .8, .25, 1) 0s;
+    -moz-transition: width .3s cubic-bezier(.25, .8, .25, 1) 0s;
+    -webkit-transition: width .3s cubic-bezier(.25, .8, .25, 1) 0s;
     background: #d9480f;
 }
+
 .fnc_btn:hover:before {
     width: 100%;
     left: 0;
     right: auto;
 }
-.fnc_btn.fnc_light{
+
+.fnc_btn.fnc_light {
     background: #FFF;
     color: #d9480f;
 }
-.fnc_btn.fnc_light:before{
+
+.fnc_btn.fnc_light:before {
     background: #d9480f;
 }
-.fnc_btn.fnc_light:hover{
+
+.fnc_btn.fnc_light:hover {
     color: #FFF;
 }
-.fnc_btn.reverses{
+
+.fnc_btn.reverses {
     background: #d9480f;
 }
-.fnc_btn i{
+
+.fnc_btn i {
     font-size: 20px;
     position: relative;
     top: 4px;
     margin-left: 5px;
 }
-.fnc_btn:hover{
+
+.fnc_btn:hover {
     color: #FFF;
 }
-.fnc_btn.reverses:before{
+
+.fnc_btn.reverses:before {
     background: #212529;
 }
-.fnc_btn.wh:hover{
+
+.fnc_btn.wh:hover {
     color: #d9480f;
 }
-.fnc_btn.wh:before{
+
+.fnc_btn.wh:before {
     background: #fff;
 }
 
@@ -142,10 +169,11 @@ a:focus{
 /*------------------------------------------------------------------------------
 / 3. Gapping Settings
 ------------------------------------------------------------------------------*/
-.noPadding{
+.noPadding {
     padding: 0;
 }
-.noPaddingRight{
+
+.noPaddingRight {
     padding-right: 0;
 }
 
@@ -153,11 +181,12 @@ a:focus{
 /*------------------------------------------------------------------------------
 / 4. Section Setup
 ------------------------------------------------------------------------------*/
-.comon_section{
+.comon_section {
     position: relative;
     padding: 100px 0;
 }
-.sub_title{
+
+.sub_title {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -166,10 +195,12 @@ a:focus{
     font-weight: 400;
     margin: 0 0 7px;
 }
-.sub_title.lights{
+
+.sub_title.lights {
     color: #FFF;
 }
-.sub_title:before{
+
+.sub_title:before {
     content: '';
     display: inline-block;
     position: relative;
@@ -180,11 +211,13 @@ a:focus{
     top: -2.5px;
     margin-right: 14px;
 }
-.sub_title.lights:before{
+
+.sub_title.lights:before {
     border-top: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
 }
-.sub_title:after{
+
+.sub_title:after {
     content: '';
     display: inline-block;
     position: relative;
@@ -195,18 +228,23 @@ a:focus{
     top: -2.5px;
     margin-left: 14px;
 }
-.sub_title.lights:after{
+
+.sub_title.lights:after {
     border-top: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
 }
-.sub_title.no_bars:before, .sub_title.no_bars:after{
+
+.sub_title.no_bars:before,
+.sub_title.no_bars:after {
     display: none;
 }
-.sec_title{
+
+.sec_title {
     font-size: 38px;
     line-height: 57px;
     margin: 0;
 }
-.sec_title.lights{
+
+.sec_title.lights {
     color: #FFF;
 }

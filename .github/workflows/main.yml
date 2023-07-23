@@ -2,7 +2,7 @@
 name: CI
 on:
   push:
-    branches: [ master ] # branches à surveiller et a vérifier sur ton Git
+    branches: [ master ]
 
 jobs:
   deploy:
@@ -22,4 +22,3 @@ jobs:
       run:
         sshpass -e ssh -o StrictHostKeyChecking=no -p 5022 ${{ secrets.USER }}@${{ secrets.HOST }}
         "cd public_html && git pull && php composer.phar install && php bin/console d:s:u --force && php bin/console c:c && php bin/console d:f:l -n"
-

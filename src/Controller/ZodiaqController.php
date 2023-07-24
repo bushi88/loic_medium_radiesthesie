@@ -103,7 +103,7 @@ class ZodiaqController extends AbstractController
     #[Route('/{slug}', name: 'sign')]
     public function sign(Request $request, string $slug): Response
     {
-        // Récupérer l'horoscope quotidien détaillé pour le signe spécifié
+        // Récupérer l'horoscope détaillé pour le signe spécifié
         $horoscopeData = $this->horoscopeService->getHoroscope($slug);
 
         return $this->render('zodiaq/sign.html.twig', [

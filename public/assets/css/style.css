@@ -1,10 +1,14 @@
 /* zodiac cards */
 
-.zodiaq_container {
-    background-image: linear-gradient(to right, #1c2129 0%, #101318 100%);
+.zodiaq_bg {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
-.zodiaq_container h1 {
+.zodiaq_bg_light {
+    background: radial-gradient(ellipse at bottom, #f0f5f9 0%, #c2d3e3 100%);
+}
+
+.zodiaq_bg h1 {
     color: #f7fefe;
     text-shadow: 0 0 3px #f7fefe, 0 0 6px #ebd594;
     font-size: 3rem;

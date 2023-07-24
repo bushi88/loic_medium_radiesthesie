@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container-fluid zodiaq_container py-4">
+	<div class="container-fluid zodiaq_bg py-4">
 
 		<h1 class="text-center my-5">
 			{{ slug | capitalize }}
@@ -14,16 +14,17 @@
 		<div class="container">
 			{% if horoscopeData is not empty %}
 				{% for horoscope in horoscopeData %}
-                <h2 class="text-white">{% trans %}Horoscope hebdomadaire{% endtrans %}<br>{{ horoscope.title }}</h2>
+					<h2 class="text-white">{% trans %}Horoscope hebdomadaire{% endtrans %}<br>{{ horoscope.title }}</h2>
 					<p>
 						{{ horoscope.description | raw }}
 					</p>
-                    <p class="text-white text-right">{% trans %}Date de publication{% endtrans %} :
+					<p class="text-white text-right">{% trans %}Date de publication{% endtrans %}
+						:
 						{{ horoscope.pubDate|date('d/m/Y H:i') }}
 					</p>
 				{% endfor %}
 			{% else %}
-            <p>{% trans %}Aucune donnée d'horoscope disponible pour{% endtrans %}
+				<p>{% trans %}Aucune donnée d'horoscope disponible pour{% endtrans %}
 					{{ slug | capitalize }}.</p>
 			{% endif %}
 		</div>

@@ -44,6 +44,7 @@
 			</div>
 		</div>
 		<!-- Preloader End -->
+        {% include "_partials/flash.html.twig" %}
 		{% include '_partials/top_header.html.twig' %}
 		{% include '_partials/header.html.twig' %}
 
@@ -88,7 +89,7 @@
 		<!-- Rev slider Add on End -->
 
 		<script src="{{ asset('assets/js/theme.js') }}"></script>
-        
+
 		<script src="{{ asset('assets/js/script.js') }}"></script>
 
 		{% block javascripts %}{% endblock %}

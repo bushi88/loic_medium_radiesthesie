@@ -8,7 +8,6 @@ class Contact
     private $lastname;
     private $email;
     private $phone;
-    private $objet;
     private $message;
 
     public function getFirstname()
@@ -55,18 +54,6 @@ class Contact
     public function setPhone($phone)
     {
         $this->phone = $phone;
-
-        return $this;
-    }
-
-    public function getObjet()
-    {
-        return $this->objet;
-    }
-
-    public function setObjet($objet)
-    {
-        $this->objet = $objet;
 
         return $this;
     }

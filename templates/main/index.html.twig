@@ -294,17 +294,21 @@
 	<!-- Service Section End -->
 
 	<!-- Quote Section Start -->
-	<section class="quote_section" id="request_quote_section">
+	<section class="contact_section" id="contact_section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="sec_title lights">Demandez une Consultation</h2>
+					<h2 class="sec_title lights">
+						{% trans %}
+						Formulaire de Contact
+						{% endtrans %}
+					</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="quote_form">
-                        {{ render(controller('App\\Controller\\ContactController::index')) }}
+					<div class="contact_form">
+						{{ render(controller('App\\Controller\\ContactController::index')) }}
 					</div>
 				</div>
 			</div>
@@ -573,11 +577,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-lg-8">
-					<h2>Explorez les Mystères de la Radiesthésie</h2>
+					<h2>{% trans %}Explorez les Mystères de la Radiesthésie{% endtrans %}</h2>
 				</div>
 				<div class="col-md-4 col-lg-4 text-right">
-					<a href="#contact_section" class="fnc_btn wh">
-						<span>Demandez une Consultation<i class="bx bx-right-arrow-alt"></i>
+					<a href="https://calendly.com/auxioma/30min" class="fnc_btn wh" target="_blank">
+						<span>
+							{% trans %}Demandez une Consultation{% endtrans %}<i class="bx bx-right-arrow-alt"></i>
 						</span>
 					</a>
 				</div>

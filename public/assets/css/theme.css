@@ -2069,26 +2069,26 @@ License URI:
 /*------------------------------------------------------------------------------
 / 7. Quote Section
 ------------------------------------------------------------------------------*/
-.quote_form {
+.contact_form {
     background: url(../images/bg/2.jpg) no-repeat center center / cover;
     border-radius: 4px;
     padding: 100px 100px 72px;
     box-shadow: 0px 9px 35px 0px rgba(33, 37, 41, 0.15);
 }
 
-.quote_form input[type="text"],
-.quote_form input[type="email"],
-.quote_form input[type="number"],
-.quote_form select,
-.quote_form input[type="tel"],
-.quote_form textarea,
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form input[type="number"],
+.contact_form select,
+.contact_form input[type="tel"],
+.contact_form textarea,
 
-.quote_form_2 input[type="text"],
-.quote_form_2 input[type="email"],
-.quote_form_2 input[type="number"],
-.quote_form_2 select,
-.quote_form_2 input[type="tel"],
-.quote_form_2 textarea {
+.contact_form_2 input[type="text"],
+.contact_form_2 input[type="email"],
+.contact_form_2 input[type="number"],
+.contact_form_2 select,
+.contact_form_2 input[type="tel"],
+.contact_form_2 textarea {
     display: block;
     width: 100%;
     height: 50px;
@@ -2101,78 +2101,78 @@ License URI:
     color: #868e96;
 }
 
-.quote_form input[type="text"]:focus,
-.quote_form input[type="email"]:focus,
-.quote_form input[type="number"]:focus,
-.quote_form select:focus,
-.quote_form input[type="tel"]:focus,
-.quote_form textarea:focus,
+.contact_form input[type="text"]:focus,
+.contact_form input[type="email"]:focus,
+.contact_form input[type="number"]:focus,
+.contact_form select:focus,
+.contact_form input[type="tel"]:focus,
+.contact_form textarea:focus,
 
-.quote_form_2 input[type="text"]:focus,
-.quote_form_2 input[type="email"]:focus,
-.quote_form_2 input[type="number"]:focus,
-.quote_form_2 select:focus,
-.quote_form_2 input[type="tel"]:focus,
-.quote_form_2 textarea:focus {
+.contact_form_2 input[type="text"]:focus,
+.contact_form_2 input[type="email"]:focus,
+.contact_form_2 input[type="number"]:focus,
+.contact_form_2 select:focus,
+.contact_form_2 input[type="tel"]:focus,
+.contact_form_2 textarea:focus {
     outline: 0;
     box-shadow: none;
 }
 
-.quote_form select,
-.quote_form_2 select {
+.contact_form select,
+.contact_form_2 select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: url(../images/select_arrow.png) no-repeat calc(100% - 20px) center #fff;
 }
 
-.quote_form input[type="text"]::-moz-placeholder,
-.quote_form input[type="email"]::-moz-placeholder,
-.quote_form input[type="number"]::-moz-placeholder,
-.quote_form input[type="tel"]::-moz-placeholder,
-.quote_form textarea::-moz-placeholder,
+.contact_form input[type="text"]::-moz-placeholder,
+.contact_form input[type="email"]::-moz-placeholder,
+.contact_form input[type="number"]::-moz-placeholder,
+.contact_form input[type="tel"]::-moz-placeholder,
+.contact_form textarea::-moz-placeholder,
 
-.quote_form_2 input[type="text"]::-moz-placeholder,
-.quote_form_2 input[type="email"]::-moz-placeholder,
-.quote_form_2 input[type="number"]::-moz-placeholder,
-.quote_form_2 input[type="tel"]::-moz-placeholder,
-.quote_form_2 textarea::-moz-placeholder {
+.contact_form_2 input[type="text"]::-moz-placeholder,
+.contact_form_2 input[type="email"]::-moz-placeholder,
+.contact_form_2 input[type="number"]::-moz-placeholder,
+.contact_form_2 input[type="tel"]::-moz-placeholder,
+.contact_form_2 textarea::-moz-placeholder {
     color: #868e96;
     opacity: 1;
 }
 
-.quote_form input[type="text"]::-ms-input-placeholder,
-.quote_form input[type="email"]::-ms-input-placeholder,
-.quote_form input[type="number"]::-ms-input-placeholder,
-.quote_form input[type="tel"]::-ms-input-placeholder,
-.quote_form textarea::-ms-input-placeholder,
+.contact_form input[type="text"]::-ms-input-placeholder,
+.contact_form input[type="email"]::-ms-input-placeholder,
+.contact_form input[type="number"]::-ms-input-placeholder,
+.contact_form input[type="tel"]::-ms-input-placeholder,
+.contact_form textarea::-ms-input-placeholder,
 
-.quote_form_2 input[type="text"]::-ms-input-placeholder,
-.quote_form_2 input[type="email"]::-ms-input-placeholder,
-.quote_form_2 input[type="number"]::-ms-input-placeholder,
-.quote_form_2 input[type="tel"]::-ms-input-placeholder,
-.quote_form_2 textarea::-ms-input-placeholder {
+.contact_form_2 input[type="text"]::-ms-input-placeholder,
+.contact_form_2 input[type="email"]::-ms-input-placeholder,
+.contact_form_2 input[type="number"]::-ms-input-placeholder,
+.contact_form_2 input[type="tel"]::-ms-input-placeholder,
+.contact_form_2 textarea::-ms-input-placeholder {
     color: #868e96;
     opacity: 1;
 }
 
-.quote_form input[type="text"]::-webkit-input-placeholder,
-.quote_form input[type="email"]::-webkit-input-placeholder,
-.quote_form input[type="number"]::-webkit-input-placeholder,
-.quote_form input[type="tel"]::-webkit-input-placeholder,
-.quote_form textarea::-webkit-input-placeholder,
+.contact_form input[type="text"]::-webkit-input-placeholder,
+.contact_form input[type="email"]::-webkit-input-placeholder,
+.contact_form input[type="number"]::-webkit-input-placeholder,
+.contact_form input[type="tel"]::-webkit-input-placeholder,
+.contact_form textarea::-webkit-input-placeholder,
 
-.quote_form_2 input[type="text"]::-webkit-input-placeholder,
-.quote_form_2 input[type="email"]::-webkit-input-placeholder,
-.quote_form_2 input[type="number"]::-webkit-input-placeholder,
-.quote_form_2 input[type="tel"]::-webkit-input-placeholder,
-.quote_form_2 textarea::-webkit-input-placeholder {
+.contact_form_2 input[type="text"]::-webkit-input-placeholder,
+.contact_form_2 input[type="email"]::-webkit-input-placeholder,
+.contact_form_2 input[type="number"]::-webkit-input-placeholder,
+.contact_form_2 input[type="tel"]::-webkit-input-placeholder,
+.contact_form_2 textarea::-webkit-input-placeholder {
     color: #868e96;
     opacity: 1;
 }
 
-.quote_form button,
-.quote_form_2 button {
+.contact_form button,
+.contact_form_2 button {
     display: block;
     background: #d9480f;
     border: none;
@@ -2192,14 +2192,14 @@ License URI:
     overflow: hidden;
 }
 
-.quote_form_2 button span,
-.quote_form button span {
+.contact_form_2 button span,
+.contact_form button span {
     position: relative;
     z-index: 2;
 }
 
-.quote_form button:before,
-.quote_form_2 button:before {
+.contact_form button:before,
+.contact_form_2 button:before {
     content: '';
     position: absolute;
     left: auto;
@@ -2214,26 +2214,26 @@ License URI:
     background: #FFF;
 }
 
-.quote_form button:hover:before,
-.quote_form_2 button:hover:before {
+.contact_form button:hover:before,
+.contact_form_2 button:hover:before {
     width: 100%;
     left: 0;
     right: auto;
 }
 
-.quote_form button:hover,
-.quote_form_2 button:hover {
+.contact_form button:hover,
+.contact_form_2 button:hover {
     color: #d9480f;
 }
 
-.quote_form button:focus,
-.quote_form_2 button:focus {
+.contact_form button:focus,
+.contact_form_2 button:focus {
     outline: 0;
     box-shadow: none;
 }
 
-.quote_form button i,
-.quote_form_2 button i {
+.contact_form button i,
+.contact_form_2 button i {
     font-size: 20px;
     position: relative;
     top: 4px;
@@ -2271,7 +2271,7 @@ License URI:
     font-weight: 500;
 }
 
-.quote_form_2 {
+.contact_form_2 {
     position: relative;
     background: url(../images/bg/5.jpg) no-repeat center center #212529;
     padding: 50px 50px 49px;

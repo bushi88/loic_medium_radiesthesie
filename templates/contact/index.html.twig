@@ -13,11 +13,18 @@
 		{{ form_row(contactForm.phone) }}
 	</div>
 	<div class="col-lg-12">
-		{{ form_row(contactForm.message) }}
+		{{ form_row(contactForm.object) }}
 	</div>
 	<div class="col-lg-12">
+		{{ form_row(contactForm.message) }}
+	</div>
+	<div class="col-lg-12 mt-3">
 		<button type="submit" name="q_submit">
-			<span>Demander une Consultation<i class="bx bx-right-arrow-alt"></i>
+			<span>
+				<i class="bx bx-mail-send mr-3"></i>
+				{% trans %}
+				ENVOYER
+				{% endtrans %}
 			</span>
 		</button>
 	</div>

@@ -10,6 +10,7 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class ContactFormType extends AbstractType
@@ -61,6 +62,19 @@ class ContactFormType extends AbstractType
                 'label' => 'Téléphone',
                 'attr' => [
                     'class' => 'form-control'
+                ],
+            ])
+            ->add('object', ChoiceType::class, [
+                'required' => true,
+                'label' => 'Objet du message',
+                'attr' => [
+                    'class' => 'form-control'
+                ],
+                'choices' => [
+                    'Sélectionnez un sujet' => '',
+                    'Demande d\'information' => 'demande_information',
+                    'Demande de rappel' => 'demande_rappel',
+                    'Autre' => 'autre',
                 ],
             ])
             ->add('message', TextareaType::class, [

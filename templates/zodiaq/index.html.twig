@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	Horoscope
+	{% trans %}Horoscope{% endtrans %}
 {% endblock %}
 
 {% block body %}
 	<div class="container-fluid zodiaq_container py-4">
-		<h1 class="text-center my-5">Horoscope</h1>
+		<h1 class="text-center my-5">{% trans %}Horoscope{% endtrans %}</h1>
 		<div class="row">
 			{% for zodiaq in zodiaqSigns %}
 				<div class="flip-card col-md-3 col-lg-2">
@@ -16,9 +16,11 @@
 							<img src="{{ zodiaq.image }}" alt="Signe du {{ zodiaq.sign }}" class="imgSign">
 						</div>
 						<div class="flip-card-back">
-							<h4>Dates :</h4>
+							<h4>{% trans %}Dates{% endtrans %}
+								:</h4>
 							<p>{{ zodiaq.date }}</p>
-							<h4>Traits :</h4>
+							<h4>{% trans %}Traits{% endtrans %}
+								:</h4>
 							<p>{{ zodiaq.traits }}</p>
 							<div class="mt-5">
 								<a href="{{ path('app_zodiaq_sign', { 'slug': zodiaq.sign }) }}" class="voir-btn" type="button">{{ zodiaq.sign }}</a>

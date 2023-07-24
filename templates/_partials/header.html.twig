@@ -12,33 +12,30 @@
 			<div class="col-md-7 col-lg-9">
 				<nav class="menu_1">
 					<div class="menuButton">
-						<a href="#">Menu<i class="bx bx-menu"></i>
+						<a href="#">{% trans %}Menu{% endtrans %}<i class="bx bx-menu"></i>
 						</a>
 					</div>
 					<ul>
 						<li class="current-menu-item menu-item-has-children">
-							<a href="{{ path('app_home') }}">Accueil</a>
+							<a href="{{ path('app_home') }}">{% trans %}Accueil{% endtrans %}</a>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#">{% trans %}À propos{% endtrans %}</a>
 							<ul class="sub-menu">
 								<li></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="#">À propos</a>
+							<a href="#">{% trans %}Blog{% endtrans %}</a>
 							<ul class="sub-menu">
 								<li></li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="#">Blog</a>
-							<ul class="sub-menu">
-								<li></li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children">
-							<a href="{{ path('app_zodiaq_all') }}">Horoscope</a>
+							<a href="{{ path('app_zodiaq_all') }}">{% trans %}Horoscope{% endtrans %}</a>
 						</li>
 						<li>
-							<a href="#">Contact</a>
+							<a href="{{ path('app_home') }}#contact_section">{% trans %}Contact{% endtrans %}</a>
 						</li>
 					</ul>
 				</nav>

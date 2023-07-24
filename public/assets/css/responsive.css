@@ -204,7 +204,7 @@ License URI:
         right: -5px;
     }
 
-    .quote_form {
+    .contact_form {
         padding: 100px 50px 72px;
     }
 
@@ -407,8 +407,8 @@ License URI:
         backface-visibility: visible;
     }
 
-    .quote_form_2,
-    .quote_form {
+    .contact_form_2,
+    .contact_form {
         padding-left: 25px;
         padding-right: 30px;
     }
@@ -706,13 +706,13 @@ License URI:
         top: 77px;
     }
 
-    .quote_form_2,
-    .quote_form {
+    .contact_form_2,
+    .contact_form {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .quote_section_2 .quote_form_2 {
+    .contact_section_2 .contact_form_2 {
         margin-top: 150px;
     }
 

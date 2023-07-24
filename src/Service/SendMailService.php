@@ -19,7 +19,7 @@ class SendMailService
         $email = (new TemplatedEmail())
             ->from($form->get('email')->getData())
             ->to('mail@example.com')
-            ->subject($form->get('objet')->getData())
+            ->subject($form->get('object')->getData())
             ->htmlTemplate('emails/' . $template . '.html.twig')
             ->context(compact('form'));
 

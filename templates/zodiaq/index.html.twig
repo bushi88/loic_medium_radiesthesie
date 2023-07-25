@@ -13,7 +13,7 @@
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
 							<h3>{{ zodiaq.sign | capitalize }}</h3>
-							<img src="{{ zodiaq.image }}" alt="Signe du {{ zodiaq.sign }}" class="imgSign">
+							<img src="{{ asset('assets/images/zodiaq/'~ zodiaq.image) }}" alt="Signe {{ zodiaq.sign }}" class="imgSign">
 						</div>
 						<div class="flip-card-back">
 							<h4>{% trans %}Dates{% endtrans %}

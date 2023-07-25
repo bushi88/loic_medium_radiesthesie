@@ -2,16 +2,16 @@
 <footer class="footer_01 zodiaq_bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-lg-3 col-xl-4">
+			<div class="col-12 col-md-4">
 				<div class="widget">
 					<div class="about_widget">
 						<div class="aw_logo">
-							<a href="#"><img src="{{ asset('assets/images/logo_2.png') }}" alt=""/></a>
+							<a href="{{ path('app_home') }}">
+								<img src="{{ asset('assets/images/logo2.png') }}" alt="logo"/>
+							</a>
 						</div>
 						<p>
-							It deals with the questions of how an individual,
-							company or government acquires the money needed called capital in the
-							company context - and how they then spend or invest that money
+							{% trans %}La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.{% endtrans %}
 						</p>
 						<div class="fo_social">
 							<a href="#">
@@ -33,49 +33,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 col-lg-3 col-xl-2">
-				<div class="widget">
-					<h3 class="widget-title">Help Center</h3>
-					<ul>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">FAQS</a></li>
-						<li><a href="#">Support Center</a></li>
-						<li><a href="#">Use of Terms</a></li>
-						<li><a href="#">Customer Area</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
+			<div class="col-12 col-md-8 d-flex flex-column align-items-end justify-content-end">
+				<div class="my-2">
+					<a href="{{ path('app_cgu') }}" class="text-warning">{% trans %}Mentions légales{% endtrans %}</a>
 				</div>
-			</div>
-			<div class="col-md-6 col-lg-3 col-xl-2">
-				<div class="widget">
-					<h3 class="widget-title">Our Services</h3>
-					<ul>
-						<li><a href="#">Mutual Funds</a></li>
-						<li><a href="#">Investment in Bonds</a></li>
-						<li><a href="#">Invest Management</a></li>
-						<li><a href="#">Business Growth</a></li>
-						<li><a href="#">Taxes Planning</a></li>
-						<li><a href="#">Financial Planning</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-3 col-xl-4 pdl95">
-				<div class="widget subscribe_widgets">
-					<h3 class="widget-title">Stay Updated</h3>
-					<div class="subscribe_content">
-						<p>
-							Enter your email address into our subscribe form to keep yourself updating with our newslatter.
-						</p>
-						<form method="post" action="#">
-							<input type="email" placeholder="Your Email *" name="s_email"/>
-							<button type="submit" name="s_submit">
-								<i class="bx bx-right-arrow-alt"></i>
-							</button>
-						</form>
-						<div class="form_note text-right">Get all
-							<span>updates and offers</span>
-						</div>
-					</div>
+				<div>
+					<a href="{{ path('app_cgu') }}" class="text-warning">{% trans %}Conditions d'utilisation{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -84,13 +47,16 @@
 <!-- Footer End -->
 
 <!-- Copyright Section Start -->
-<section class="copyright">
+<section class="copyright zodiaq_bg">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="copbar"></div>
 				<p class="copies">
-					2023 ©
+					&copy;
+					<script>
+						document.write(new Date().getFullYear())
+					</script>
 					<a href="#">DCH</a>. All rights reserved.
 				</p>
 			</div>

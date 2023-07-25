@@ -6,32 +6,10 @@
 
 {% block body %}
 	<!-- Popup Search Start -->
-	<section class="popup_search_sec">
-		<div class="popup_search_overlay"></div>
-		<div class="pop_search_background">
-			<div class="middle_search">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 text-center">
-							<div class="popup_search_form">
-								<form method="get" action="#">
-									<input type="search" name="s" id="s" placeholder="Type Words and Hit Enter">
-									<button type="submit">
-										<i class="bx bx-search"></i>
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<!-- Popup Search End -->
 
 	<!-- Slider 01 Start -->
-	<section class="slider_01">
-		<div class="rev_slider_wrapper">
+		<section class="slider_01"> <div class="rev_slider_wrapper">
 			<div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
 				<ul>
 					<li data-index="rs-1" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Équilibrez votre énergie vitale" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -43,18 +21,20 @@
 							Retrouvez votre équilibre énergétique grâce à la puissance apaisante de la radiesthésie.
 						</div>
 						<div class="tp-caption tp-buttons" data-x="['left']" data-hoffset="['0']" data-y="['middle']" data-voffset="['125px','125px','125px','90']" data-fontsize="['18','18','18','18']" data-fontweight="300" data-lineheight="['27','27','27','27']" data-width="['430','400','400','100%']" data-height="['auto']" data-whitesapce="['normal']" data-color="['#ced4da']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textalign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,25]">
-							<a href="#" class="fnc_btn reverses">
-								<span>Contact<i class="bx bx-right-arrow-alt"></i>
+							<a href="{{ path('app_home') }}#contact_section" class="fnc_btn reverses">
+								<span>
+									Contact<i class="bx bx-right-arrow-alt"></i>
 								</span>
 							</a>
-							<a href="#" class="fnc_btn fnc_light">
+							<a href="{{ path('app_about') }}" class="fnc_btn fnc_light">
 								<span>A propos<i class="bx bx-right-arrow-alt"></i>
 								</span>
 							</a>
 						</div>
 					</li>
+
 					<li data-index="rs-2" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Harmonisez votre vie avec la radiesthésie" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-						<img src="{{ asset('assets/images/slider/2.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+						<img src="{{ asset('assets/images/slider/5.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 						<div class="tp-caption tp-heading" data-x="['left']" data-hoffset="['0']" data-y="['middle']" data-voffset="['-80px','-80px','-70px','-150px']" data-fontsize="['65','65','55','35']" data-fontweight="600" data-lineheight="['75','75','65','45']" data-width="['680','680','570','100%']" data-height="['auto']" data-whitesapce="['normal']" data-color="['#FFF']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textalign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,25]">
 							Harmonisez votre vie avec la radiesthésie
 						</div>
@@ -62,16 +42,18 @@
 							Expérimentez une vie harmonieuse et équilibrée en laissant la radiesthésie vous guider vers la sérénité.
 						</div>
 						<div class="tp-caption tp-buttons" data-x="['left']" data-hoffset="['0']" data-y="['middle']" data-voffset="['125px','125px','125px','90']" data-fontsize="['18','18','18','18']" data-fontweight="300" data-lineheight="['27','27','27','27']" data-width="['430','400','400','100%']" data-height="['auto']" data-whitesapce="['normal']" data-color="['#ced4da']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textalign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,25]">
-							<a href="#" class="fnc_btn reverses">
-								<span>Contact<i class="bx bx-right-arrow-alt"></i>
+							<a href="{{ path('app_home') }}#contact_section" class="fnc_btn reverses">
+								<span>
+									Contact<i class="bx bx-right-arrow-alt"></i>
 								</span>
 							</a>
-							<a href="#" class="fnc_btn fnc_light">
+							<a href="{{ path('app_about') }}" class="fnc_btn fnc_light">
 								<span>A propos<i class="bx bx-right-arrow-alt"></i>
 								</span>
 							</a>
 						</div>
 					</li>
+
 					<li data-index="rs-3" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Trouvez les réponses cachées" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 						<img src="{{ asset('assets/images/slider/3.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 						<div class="tp-caption tp-heading" data-x="['left']" data-hoffset="['0']" data-y="['middle']" data-voffset="['-80px','-80px','-70px','-150px']" data-fontsize="['65','65','55','35']" data-fontweight="600" data-lineheight="['75','75','65','45']" data-width="['680','680','570','100%']" data-height="['auto']" data-whitesapce="['normal']" data-color="['#FFF']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textalign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,25]">
@@ -81,11 +63,33 @@
 							Plongez dans l'univers secret de la radiesthésie et révélez les réponses qui illumineront votre chemin.
 						</div>
 						<div class="tp-caption tp-buttons" data-x="['left']" data-hoffset="['0']" data-y="['middle']" data-voffset="['125px','125px','125px','90']" data-fontsize="['18','18','18','18']" data-fontweight="300" data-lineheight="['27','27','27','27']" data-width="['430','400','400','100%']" data-height="['auto']" data-whitesapce="['normal']" data-color="['#ced4da']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textalign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,25]">
-							<a href="#" class="fnc_btn reverses">
-								<span>Contact<i class="bx bx-right-arrow-alt"></i>
+							<a href="{{ path('app_home') }}#contact_section" class="fnc_btn reverses">
+								<span>
+									Contact<i class="bx bx-right-arrow-alt"></i>
 								</span>
 							</a>
-							<a href="#" class="fnc_btn fnc_light">
+							<a href="{{ path('app_about') }}" class="fnc_btn fnc_light">
+								<span>A propos<i class="bx bx-right-arrow-alt"></i>
+								</span>
+							</a>
+						</div>
+					</li>
+
+					<li data-index="rs-4" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Soin purificateur et libérateur" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<img src="{{ asset('assets/images/slider/2.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+						<div class="tp-caption tp-heading" data-x="['left']" data-hoffset="['0']" data-y="['middle']" data-voffset="['-80px','-80px','-70px','-150px']" data-fontsize="['65','65','55','35']" data-fontweight="600" data-lineheight="['75','75','65','45']" data-width="['680','680','570','100%']" data-height="['auto']" data-whitesapce="['normal']" data-color="['#FFF']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textalign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,25]">
+							Soin purificateur et libérateur
+						</div>
+						<div class="tp-caption tp-paragraph " data-x="['left']" data-hoffset="['0']" data-y="['middle']" data-voffset="['41px','41px','41px','-40px']" data-fontsize="['18','18','18','18']" data-fontweight="300" data-lineheight="['27','27','27','27']" data-width="['430','400','400','100%']" data-height="['auto']" data-whitesapce="['normal']" data-color="['#ced4da']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textalign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,25]">
+							stress, mal-être, fardeaux, énergie et liens toxiques, mauvais œil, blocages, poids du passé, karma familial..
+						</div>
+						<div class="tp-caption tp-buttons" data-x="['left']" data-hoffset="['0']" data-y="['middle']" data-voffset="['125px','125px','125px','90']" data-fontsize="['18','18','18','18']" data-fontweight="300" data-lineheight="['27','27','27','27']" data-width="['430','400','400','100%']" data-height="['auto']" data-whitesapce="['normal']" data-color="['#ced4da']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textalign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,25]">
+							<a href="{{ path('app_home') }}#contact_section" class="fnc_btn reverses">
+								<span>
+									Contact<i class="bx bx-right-arrow-alt"></i>
+								</span>
+							</a>
+							<a href="{{ path('app_about') }}" class="fnc_btn fnc_light">
 								<span>A propos<i class="bx bx-right-arrow-alt"></i>
 								</span>
 							</a>
@@ -105,7 +109,7 @@
 					<div class="ab_images">
 						<img src="{{ asset('assets/images/home_01/1.jpg') }}" alt=""/>
 						<a data-rel="lightcase" href="https://www.youtube.com/embed/FgET-iypmkc" title="YouTube video player" class="vp_btn light_pops">
-							Play
+							{% trans %}Play{% endtrans %}
 							<span>
 								<i class="bx bx-play"></i>
 							</span>
@@ -114,21 +118,23 @@
 				</div>
 				<div class="col-md-12 col-lg-6 noPaddingRight">
 					<div class="ab_content">
-						<h5>A propos</h5>
+						<h5>{% trans %}A propos{% endtrans %}</h5>
 						<h2>
-							La Radiesthésie : Révélateur de Mystères Cachés
+							{% trans %}La Radiesthésie : Révélateur de Mystères Cachés{% endtrans %}
 						</h2>
 						<div class="dvd_bar"></div>
 						<p>
+							{% trans %}
 							Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour vous guider vers une harmonie éclairée.
+							{% endtrans %}
 						</p>
 						<ul class="list_ul">
-							<li>Radiesthésie pendulaire</li>
-							<li>Radiesthésie médicale</li>
-							<li>Radiesthésie géobiologique</li>
-							<li>Radiesthésie alimentaire</li>
-							<li>Radiesthésie spirituelle</li>
-							<li>Radiesthésie émotionnelle</li>
+							<li>{% trans %}Radiesthésie pendulaire{% endtrans %}</li>
+							<li>{% trans %}Radiesthésie médicale{% endtrans %}</li>
+							<li>{% trans %}Radiesthésie géobiologique{% endtrans %}</li>
+							<li>{% trans %}Radiesthésie alimentaire{% endtrans %}</li>
+							<li>{% trans %}Radiesthésie spirituelle{% endtrans %}</li>
+							<li>{% trans %}Radiesthésie émotionnelle{% endtrans %}</li>
 						</ul>
 					</div>
 				</div>
@@ -147,25 +153,25 @@
 				<div class="col-md-6 col-lg-3">
 					<div class="fact_01 text-center">
 						<h2 class="counters" data-count="7">7</h2>
-						<h5>Types de Radiesthésie</h5>
+						<h5>{% trans %}Types de Radiesthésie{% endtrans %}</h5>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="fact_01 text-center">
 						<h2 class="counters" data-count="777">777</h2>
-						<h5>Satisfied Clients</h5>
+						<h5>{% trans %}Clients satisfaits{% endtrans %}</h5>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="fact_01 text-center">
 						<h2 class="counters" data-count="77">77</h2>
-						<h5>Projets Terminés</h5>
+						<h5>{% trans %}Projets Terminés{% endtrans %}</h5>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="fact_01 text-center">
 						<h2 class="counters" data-count="7777">7777</h2>
-						<h5>Heures de Travail</h5>
+						<h5>{% trans %}Heures de Travail{% endtrans %}</h5>
 					</div>
 				</div>
 			</div>
@@ -173,127 +179,69 @@
 	</section>
 	<!-- Fact Section End -->
 
-	<!-- Service Section Start -->
-	<section class="service_section">
+	<!-- Blog Section Start -->
+	<section class="service_section" id="blog_section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h5 class="sub_title">Contacts</h5>
-					<h2 class="sec_title">What We Offer</h2>
+					<h5 class="sub_title">Blog</h5>
+					<h2 class="sec_title">Nos articles</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12 noPadding">
 					<div class="service_01_slider owl-carousel">
-						<div class="service_01">
-							<div class="sr01_thumb">
-								<img src="{{ asset('assets/images/services/1.jpg') }}" alt="Mutual Funds"/>
+						{% for article in articles %}
+							<div class="service_01">
+								<div class="sr01_thumb">
+									<img src="{{ asset('assets/images/blog/'~ article.image) }}" alt="{{ article.titre }}"/>
+								</div>
+								<div class="sr01_dtl">
+									<i class='{{ article.icone }}'></i>
+									<h3>
+										<a href="single_service.html">{{ article.titre }}</a>
+									</h3>
+									<p class="text-justify">
+										{{ article.texte }}
+									</p>
+								</div>
+								<div class="blog_01">
+									<div class="b01_det">
+										<div class="b01_meta">
+											<span>
+												<i class="bx bxs-time-five"></i>
+												<a href="#">Aug 11, 2020</a>
+											</span>
+											<span class="b01m_com">
+												<i class="bx bxs-comment-dots"></i>
+												<a href="#">4 Comments</a>
+											</span>
+										</div>
+										<a href="single_blog_post.html" class="learn_more_lnk">Read More</a>
+									</div>
+								</div>
 							</div>
-							<div class="sr01_dtl text-center">
-								<i class="flaticon-202-piggy-bank"></i>
-								<h3>
-									<a href="single_service.html">Mutual Funds</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-								<a class="learn_more_lnk" href="single_service.html">Read More</a>
-							</div>
-						</div>
-						<div class="service_01">
-							<div class="sr01_thumb">
-								<img src="{{ asset('assets/images/services/2.jpg') }}" alt="Mutual Funds"/>
-							</div>
-							<div class="sr01_dtl text-center">
-								<i class="flaticon-205-money-2"></i>
-								<h3>
-									<a href="single_service.html">Investment in Bonds</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-								<a class="learn_more_lnk" href="single_service.html">Read More</a>
-							</div>
-						</div>
-						<div class="service_01">
-							<div class="sr01_thumb">
-								<img src="{{ asset('assets/images/services/3.jpg') }}" alt="Mutual Funds"/>
-							</div>
-							<div class="sr01_dtl text-center">
-								<i class="flaticon-200-presentation"></i>
-								<h3>
-									<a href="single_service.html">Investment Management</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-								<a class="learn_more_lnk" href="single_service.html">Read More</a>
-							</div>
-						</div>
-						<div class="service_01">
-							<div class="sr01_thumb">
-								<img src="{{ asset('assets/images/services/4.jpg') }}" alt="Mutual Funds">
-							</div>
-							<div class="sr01_dtl text-center">
-								<i class="flaticon-127-profits-4"></i>
-								<h3>
-									<a href="#">Business Growth</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-								<a class="learn_more_lnk" href="single_service.html">Read More</a>
-							</div>
-						</div>
-						<div class="service_01">
-							<div class="sr01_thumb">
-								<img src="{{ asset('assets/images/services/5.jpg') }}" alt="Mutual Funds">
-							</div>
-							<div class="sr01_dtl text-center">
-								<i class="flaticon-137-money-bag-3"></i>
-								<h3>
-									<a href="single_service.html">Taxes Planning</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-								<a class="learn_more_lnk" href="single_service.html">Read More</a>
-							</div>
-						</div>
-						<div class="service_01">
-							<div class="sr01_thumb">
-								<img src="{{ asset('assets/images/services/6.jpg') }}" alt="Mutual Funds">
-							</div>
-							<div class="sr01_dtl text-center">
-								<i class="flaticon-204-money-3"></i>
-								<h3>
-									<a href="single_service.html">Financial Planning</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-								<a class="learn_more_lnk" href="single_service.html">Read More</a>
-							</div>
-						</div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<div class="notes">
-						We provide new ways to manage your businesses
-						<a href="#">
-							<span>Request your Quote</span>
-							<i class="bx bx-right-arrow-alt"></i>
+						{% trans %}Explorez les Mystères de la Radiesthésie{% endtrans %}
+						<a href="https://calendly.com/eirl-omont/60min" target="_blank">
+							<span>
+								{% trans %}Demandez une Consultation{% endtrans %}<i class="bx bx-right-arrow-alt"></i>
+							</span>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Service Section End -->
+	<!-- Blog Section End -->
 
-	<!-- Quote Section Start -->
+	<!-- Contact Section Start -->
 	<section class="contact_section" id="contact_section">
 		<div class="container">
 			<div class="row">
@@ -314,263 +262,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Quote Section End -->
-
-	<!-- Testimonial Section Start -->
-	<section class="testimonial_section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h5 class="sub_title">Testimonials</h5>
-					<h2 class="sec_title">What Clients Say A propos</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 noPadding">
-					<div class="testimonial_slider_01 owl-carousel">
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/1.jpg') }}" alt=""/>
-								<h3>Mark Smith</h3>
-								<p>Envato Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/2.jpg') }}" alt=""/>
-								<h3>Vera Duncan</h3>
-								<p>PayPal Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/3.jpg') }}" alt=""/>
-								<h3>Bryce Vaughn</h3>
-								<p>Google Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/4.jpg') }}" alt=""/>
-								<h3>Cooper Moore</h3>
-								<p>Payoneer Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/5.jpg') }}" alt=""/>
-								<h3>Dan Boyle</h3>
-								<p>Codecanyon Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/6.jpg') }}" alt=""/>
-								<h3>Arnaldo Kozey</h3>
-								<p>Behance Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/7.jpg') }}" alt=""/>
-								<h3>Mike Hardson</h3>
-								<p>Kopalpora Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/8.jpg') }}" alt=""/>
-								<h3>Fae Hoppe</h3>
-								<p>Kamla Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-						<div class="testimonial_01 text-center">
-							<div class="t01_head">
-								<img src="{{ asset('assets/images/testimonial/9.jpg') }}" alt=""/>
-								<h3>Kalia Fince</h3>
-								<p>Master Inc.</p>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<div class="t01_rate">
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-								<i class="bx bx-star"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Testimonial Section End -->
-
-	<!-- Blog Section Start -->
-	<section class="blog_section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h5 class="sub_title">Our Blog</h5>
-					<h2 class="sec_title">Our Latest News</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<div class="blog_01">
-						<div class="b01_thumb">
-							<img src="{{ asset('assets/images/blog/1.jpg') }}" alt=""/>
-						</div>
-						<div class="b01_det">
-							<div class="b01_meta">
-								<span>
-									<i class="bx bxs-time-five"></i>
-									<a href="#">Jan 16, 2020</a>
-								</span>
-								<span class="b01m_com">
-									<i class="bx bxs-comment-dots"></i>
-									<a href="#">3 Comments</a>
-								</span>
-							</div>
-							<h3>
-								<a href="single_blog_post.html">Why Need To Use Financial Consulting Service?</a>
-							</h3>
-							<a href="single_blog_post.html" class="learn_more_lnk">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="blog_01">
-						<div class="b01_thumb">
-							<img src="{{ asset('assets/images/blog/2.jpg') }}" alt=""/>
-						</div>
-						<div class="b01_det">
-							<div class="b01_meta">
-								<span>
-									<i class="bx bxs-time-five"></i>
-									<a href="#">Oct 14, 2020</a>
-								</span>
-								<span class="b01m_com">
-									<i class="bx bxs-comment-dots"></i>
-									<a href="#">2 Comments</a>
-								</span>
-							</div>
-							<h3>
-								<a href="single_blog_post.html">The Key to Efficient Loan Origination</a>
-							</h3>
-							<a href="single_blog_post.html" class="learn_more_lnk">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="blog_01">
-						<div class="b01_thumb">
-							<img src="{{ asset('assets/images/blog/3.jpg') }}" alt=""/>
-						</div>
-						<div class="b01_det">
-							<div class="b01_meta">
-								<span>
-									<i class="bx bxs-time-five"></i>
-									<a href="#">Aug 11, 2020</a>
-								</span>
-								<span class="b01m_com">
-									<i class="bx bxs-comment-dots"></i>
-									<a href="#">4 Comments</a>
-								</span>
-							</div>
-							<h3>
-								<a href="single_blog_post.html">Can Your Business Grow With Our New Technology?</a>
-							</h3>
-							<a href="single_blog_post.html" class="learn_more_lnk">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Blog Section End -->
+	<!-- Contact Section End -->
 
 	<!-- CTA Section Start -->
 	<section class="cta_section">

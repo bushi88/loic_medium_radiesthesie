@@ -82,7 +82,7 @@ class ContactFormType extends AbstractType
                 'label' => 'Votre message',
                 'attr' => [
                     'class' => 'form-control',
-                    'rows' => 8,
+                    'rows' => 4,
                 ],
             ]);
     }

@@ -1619,6 +1619,7 @@ License URI:
 / 6. Service Section
 ------------------------------------------------------------------------------*/
 .service_01 {
+    min-height: 39rem;
     position: relative;
     background: #FFF;
     border-radius: 3px;
@@ -1685,8 +1686,8 @@ License URI:
 
 .sr01_dtl {
     position: relative;
-    padding: 73px 30px 40px;
-    word-break: break-all;
+    padding: 73px 30px 10px;
+    /* word-break: break-all; */
 }
 
 .sr01_no_icon .sr01_dtl {
@@ -2001,7 +2002,7 @@ License URI:
 }
 
 .service_02 p {
-    word-break: break-all;
+    /* word-break: break-all; */
     margin: 0 0 20px;
 }
 
@@ -2443,7 +2444,7 @@ License URI:
 
 .c01_det p {
     color: #ced4da;
-    word-break: break-all;
+    /* word-break: break-all; */
     margin: 0 0 20px;
 
     -webkit-transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -2757,7 +2758,7 @@ License URI:
 }
 
 .c03_det p {
-    word-break: break-all;
+    /* word-break: break-all; */
     margin: 0 0 20px;
     opacity: 0;
     visibility: hidden;
@@ -2876,7 +2877,7 @@ License URI:
 
 .testimonial_01>p {
     margin: 0 0 24px;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 .t01_rate {
@@ -3773,7 +3774,7 @@ License URI:
 }
 
 .icon_box_02 p {
-    word-break: break-all;
+    /* word-break: break-all; */
     margin: 0 0 20px;
 }
 
@@ -4001,7 +4002,7 @@ License URI:
 }
 
 .imb01_content p {
-    word-break: break-all;
+    /* word-break: break-all; */
     margin: 0;
 }
 
@@ -4629,7 +4630,7 @@ blockquote cite {
 }
 
 .wb_all {
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 .comon_section.single_service {
@@ -5009,7 +5010,7 @@ blockquote cite {
 }
 
 .post_author p {
-    word-break: break-all;
+    /* word-break: break-all; */
     margin: 0 0 28px;
 }
 

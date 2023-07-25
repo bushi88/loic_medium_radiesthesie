@@ -11,15 +11,15 @@
 .zodiaq_bg h1 {
     color: #f7fefe;
     text-shadow: 0 0 3px #f7fefe, 0 0 6px #ebd594;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-decoration: underline;
 }
 
 .flip-card-front h3 {
     color: #f7fefe;
     text-shadow: 0 0 3px #f7fefe, 0 0 6px #ebd594;
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
 }
 
 .flip-card-back h4 {

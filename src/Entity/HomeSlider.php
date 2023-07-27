@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Traits\CreatedAtTrait;
 use App\Repository\HomeSliderRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
@@ -9,6 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: HomeSliderRepository::class)]
 class HomeSlider
 {
+    use CreatedAtTrait;
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
@@ -21,16 +24,15 @@ class HomeSlider
     private ?string $description = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $buttonMessage = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $buttonURL = null;
-
-    #[ORM\Column(length: 255)]
     private ?string $image = null;
 
     #[ORM\Column(nullable: true)]
     private ?bool $isDisplayed = null;
+
+    public function __construct()
+    {
+        $this->createdAt = new \DateTimeImmutable();
+    }
 
     public function getId(): ?int
     {
@@ -57,30 +59,6 @@ class HomeSlider
     public function setDescription(string $description): self
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    public function getButtonMessage(): ?string
-    {
-        return $this->buttonMessage;
-    }
-
-    public function setButtonMessage(string $buttonMessage): self
-    {
-        $this->buttonMessage = $buttonMessage;
-
-        return $this;
-    }
-
-    public function getButtonURL(): ?string
-    {
-        return $this->buttonURL;
-    }
-
-    public function setButtonURL(string $buttonURL): self
-    {
-        $this->buttonURL = $buttonURL;
 
         return $this;
     }

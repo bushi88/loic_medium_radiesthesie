@@ -2,12 +2,20 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Repository\HomeSliderRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class MainController extends AbstractController
 {
+    private $slideRepo;
+
+    public function __construct(HomeSliderRepository $slideRepo)
+    {
+        $this->slideRepo = $slideRepo;
+    }
+
     #[Route('/', name: 'app_home')]
     public function index(): Response
     {
@@ -68,10 +76,11 @@ class MainController extends AbstractController
             ],
         ];
 
-
+        $homeSlider = $this->slideRepo->findBy(['isDisplayed' => true]);
 
         return $this->render('main/index.html.twig', [
             'controller_name' => 'MainController',
+            'homeSlider' => $homeSlider,
             'articles' => $articles,
         ]);
     }

@@ -22,8 +22,6 @@ class HomeSliderCrudController extends AbstractCrudController
             IdField::new('id')->hideOnForm(),
             TextField::new('title'),
             TextField::new('description'),
-            TextField::new('buttonMessage'),
-            TextField::new('buttonURL'),
             ImageField::new('image')
                 ->setBasePath('/assets/images/slider/')
                 ->setUploadDir('/assets/images/slider/')

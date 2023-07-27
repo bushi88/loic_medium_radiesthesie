@@ -5,24 +5,41 @@ namespace App\DataFixtures;
 use App\Entity\HomeSlider;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
-use Faker\Factory;
 
 class HomeSliderFixtures extends Fixture
 {
-    public function load(ObjectManager $manager)
+    public function load(ObjectManager $manager): void
     {
-        $faker = Factory::create();
+        $sliders = [
+            1 => [
+                "title" => "Équilibrez votre énergie vitale",
+                "description" => "Retrouvez votre équilibre énergétique grâce à la puissance apaisante de la radiesthésie",
+                "image" => "1.jpg",
+            ],
+            2 => [
+                "title" => "Soin purificateur et libérateur",
+                "description" => "stress, mal-être, fardeaux, énergie et liens toxiques, mauvais œil, blocages, poids du passé, karma familial...",
+                "image" => "2.jpg",
+            ],
+            3 => [
+                "title" => "Trouvez les réponses cachées",
+                "description" => "Plongez dans l'univers secret de la radiesthésie et révélez les réponses qui illumineront votre chemin",
+                "image" => "3.jpg",
+            ],
+            4 => [
+                "title" => "Harmonisez votre vie avec la radiesthésie",
+                "description" => "Expérimentez une vie harmonieuse et équilibrée en laissant la radiesthésie vous guider vers la sérénité",
+                "image" => "5.jpg",
+            ],
 
-        for ($i = 0; $i < 5; $i++) {
-            $homeSlider = new HomeSlider();
-            $homeSlider->setTitle($faker->sentence(1))
-                ->setDescription($faker->paragraph(1))
-                ->setButtonMessage($faker->sentence(1))
-                ->setButtonURL($faker->url)
-                ->setImage($faker->imageUrl(1700, 400, 'ads', true))
-                ->setIsDisplayed($faker->boolean(30)); // 30% chance to be `true`
-
-            $manager->persist($homeSlider);
+        ];
+        foreach ($sliders as $key => $value) {
+            $slide = new HomeSlider();
+            $slide->setTitle($value['title']);
+            $slide->setDescription($value['description']);
+            $slide->setImage($value['image']);
+            $slide->setIsDisplayed(1);
+            $manager->persist($slide);
         }
 
         $manager->flush();

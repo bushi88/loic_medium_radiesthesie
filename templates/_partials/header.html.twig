@@ -24,20 +24,18 @@
 						<li class="">
 							<a href="{{ path('app_about') }}">{% trans %}À propos{% endtrans %}</a>
 						</li>
-                        <li>
-                            <a href="{{ path('app_home') }}#contact_section">{% trans %}Contact{% endtrans %}</a>
-                        </li>
+						<li>
+							<a href="{{ path('app_home') }}#contact_section">{% trans %}Contact{% endtrans %}</a>
+						</li>
 						<li class="">
 							<a href="{{ path('app_zodiaq_all') }}">{% trans %}Horoscope{% endtrans %}</a>
 						</li>
-                        <li class="menu-item-has-children">
-                        <a href="{{ path('app_home') }}#blog_section"">{% trans %}Blog{% endtrans %}</a>
-                        {# <ul class="sub-menu">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul> #}
-                    </li>
+						<li class="menu-item-has-children">
+							<a href="{{ path('app_home') }}#blog_section">{% trans %}Notre Blog{% endtrans %}</a>
+							<ul class="sub-menu">
+								{{ render(controller('App\\Controller\\Pages\\BlogController::menu')) }}
+							</ul>
+						</li>
 					</ul>
 				</nav>
 			</div>

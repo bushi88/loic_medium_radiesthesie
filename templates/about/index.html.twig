@@ -6,42 +6,54 @@
 
 {% block body %}
 	<div class="container-fluid zodiaq_bg py-3 mb-2">
-		<h1 class="text-center mb-5">{% trans %}À propos de notre medium radiesthésiste{% endtrans %}</h1>
+		<div class="container my-5">
+			<h1 class="mb-5">{% trans %}À propos{% endtrans %}</h1>
+		</div>
 
 		<section id="section1" class="container my-5">
-			<div class="d-flex flex-row justify-content-center align-items-center">
-				<div class="w-100">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-md-3 mb-3 mb-md-0">
 					<img src="https://i.pravatar.cc/150?u=a39" alt="Medium Radiesthésiste" class="img-fluid rounded-circle">
 				</div>
-				<p class="text-justify">
-					{% trans %}
-					Bienvenue sur notre site dédié à la radiesthésie et à la voyance. Notre medium radiesthésiste possède un don unique qui lui permet de percevoir les énergies et de recevoir des informations intuitives du monde spirituel. Avec des années d'expérience dans le domaine de la radiesthésie, notre medium a aidé de nombreuses personnes à trouver des réponses, à guérir des blessures émotionnelles, et à retrouver un équilibre dans leur vie.
-					{% endtrans %}
-				</p>
+				<div class="col-md-9">
+					<p class="text-justify">
+						{% trans %}
+						Bienvenue sur notre site dédié à la radiesthésie et à la voyance. Notre medium radiesthésiste possède un don unique qui lui permet de percevoir les énergies et de recevoir des informations intuitives du monde spirituel. Avec des années d'expérience dans le domaine de la radiesthésie, notre medium a aidé de nombreuses personnes à trouver des réponses, à guérir des blessures émotionnelles, et à retrouver un équilibre dans leur vie.
+						{% endtrans %}
+					</p>
+				</div>
 			</div>
 		</section>
 
 		<section id="section2" class="container my-5">
 			<h2 class="text-white">{% trans %}Comment la radiesthésie fonctionne-t-elle ?{% endtrans %}</h2>
-			<div class="d-flex flex-row justify-content-center align-items-center">
-				<p class="text-justify">
-					{% trans %}
-					La radiesthésie est une pratique ancienne qui utilise des outils tels que des pendules et des baguettes pour capter et interpréter les vibrations énergétiques qui nous entourent. Notre medium radiesthésiste est en mesure d'utiliser ces outils pour localiser des objets perdus, détecter des blocages énergétiques dans le corps, et répondre à des questions importantes concernant le passé, le présent et l'avenir.
-                    {% endtrans %}
-				</p>
-				<img src="https://picsum.photos/140/120" alt="Pendule Radiesthésie" class="img-fluid rounded pendulum-image ml-4">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-md-9 mb-3 mb-md-0">
+					<p class="text-justify">
+						{% trans %}
+						La radiesthésie est une pratique ancienne qui utilise des outils tels que des pendules et des baguettes pour capter et interpréter les vibrations énergétiques qui nous entourent. Notre medium radiesthésiste est en mesure d'utiliser ces outils pour localiser des objets perdus, détecter des blocages énergétiques dans le corps, et répondre à des questions importantes concernant le passé, le présent et l'avenir.
+						{% endtrans %}
+					</p>
+				</div>
+				<div class="col-md-3 text-md-right">
+					<img src="https://picsum.photos/180/120" alt="Radiesthésie" class="img-fluid rounded">
+				</div>
 			</div>
 		</section>
 
 		<section id="section3" class="container my-5">
 			<h2 class="text-white">{% trans %}Consultations de voyance personnalisées{% endtrans %}</h2>
-			<div class="d-flex flex-row justify-content-center align-items-center">
-				<img src="https://picsum.photos/180/100" alt="Pendule Radiesthésie" class="img-fluid rounded pendulum-image mr-4">
-				<p class="text-justify">
-					{% trans %}
-					Notre medium propose des consultations de voyance personnalisées, où il se connecte avec votre énergie et celle de l'univers pour vous offrir des messages et des conseils spécifiquement adaptés à votre situation. Que vous ayez des questions sur votre carrière, vos relations, votre santé ou votre spiritualité, notre medium radiesthésiste est là pour vous guider sur votre chemin de vie.
-					{% endtrans %}
-				</p>
+			<div class="row justify-content-center align-items-center">
+				<div class="col-md-9 mb-3 mb-md-0">
+					<p class="text-justify">
+						{% trans %}
+						Notre medium propose des consultations de voyance personnalisées, où il se connecte avec votre énergie et celle de l'univers pour vous offrir des messages et des conseils spécifiquement adaptés à votre situation. Que vous ayez des questions sur votre carrière, vos relations, votre santé ou votre spiritualité, notre medium radiesthésiste est là pour vous guider sur votre chemin de vie.
+						{% endtrans %}
+					</p>
+				</div>
+				<div class="col-md-3 text-md-right">
+					<img src="https://picsum.photos/180/110" alt="Radiesthésie" class="img-fluid rounded">
+				</div>
 			</div>
 		</section>
 
@@ -53,12 +65,18 @@
 				{% endtrans %}
 			</p>
 			<p class="contact-info text-white">
-				<strong>Phone :
-				</strong>06.86.65.63.58<br>
-				<strong>Email :
-				</strong>
+				<strong>Phone :</strong>
+				06.86.65.63.58<br>
+				<strong>Email :</strong>
 				<a href="{{ path('app_home') }}#contact_section" class="text-white">contact@contact.com</a>
 			</p>
+			<div class="notes">
+				<a href="https://calendly.com/eirl-omont/60min" target="_blank">
+					<span>
+						{% trans %}Demandez une Consultation{% endtrans %}<i class="bx bx-right-arrow-alt"></i>
+					</span>
+				</a>
+			</div>
 		</section>
 	</div>
 {% endblock %}

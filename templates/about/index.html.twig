@@ -5,11 +5,9 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container-fluid zodiaq_bg py-3 mb-2">
-		<div class="container my-5">
-			<h1 class="mb-5">{% trans %}À propos{% endtrans %}</h1>
-		</div>
+	{{ include("_partials/banner.html.twig", {'name': 'À propos' | trans }) }}
 
+	<div class="container-fluid zodiaq_bg py-3 mb-2">
 		<section id="section1" class="container my-5">
 			<div class="row justify-content-center align-items-center">
 				<div class="col-md-3 mb-3 mb-md-0">

@@ -1725,7 +1725,7 @@ License URI:
     font-size: 22px;
     line-height: 33px;
     margin: 0 0 12px;
-    min-height: 55px;
+    height: 70px;
     overflow: hidden;
 }
 
@@ -1739,7 +1739,7 @@ License URI:
 
 .sr01_dtl p {
     margin: 0 0 5px;
-    min-height: 65px;
+    height: 65px;
     overflow: hidden;
 }
 
@@ -5045,6 +5045,8 @@ blockquote cite {
     font-size: 22px;
     line-height: 33px;
     margin: 0 0 21px;
+    height: 70px;
+    overflow: hidden;
 }
 
 .post_comment_area {

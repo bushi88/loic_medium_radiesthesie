@@ -373,6 +373,10 @@
     background: #f8f9fa;
 }
 
+.page_banner.bg_11 {
+    background: url(../images/bg/11.jpg) no-repeat center center / cover;
+}
+
 .page_banner.bg_12 {
     background: url(../images/bg/12.jpg) no-repeat center center / cover;
 }
@@ -413,12 +417,20 @@
     background: url(../images/bg/21.jpg) no-repeat center center / cover;
 }
 
+.page_banner.bg_22 {
+    background: url(../images/bg/22.jpg) no-repeat center center / cover;
+}
+
 .page_banner.bg_23 {
     background: url(../images/bg/23.jpg) no-repeat center center / cover;
 }
 
 .page_banner.bg_24 {
     background: url(../images/bg/24.jpg) no-repeat center center / cover;
+}
+
+.page_banner.bg_25 {
+    background: url(../images/bg/25.jpg) no-repeat center center / cover;
 }
 
 .page_banner.bg_26 {

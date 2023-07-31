@@ -5,11 +5,9 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container-fluid zodiaq_bg py-4 mb-2">
+	{{ include("_partials/banner.html.twig", {'name': slug | capitalize }) }}
 
-		<h1 class="text-center my-5">
-			{{ slug | capitalize }}
-		</h1>
+	<div class="container-fluid zodiaq_bg py-4 mb-2">
 
 		<div class="container">
 			{% if horoscopeData is not empty %}

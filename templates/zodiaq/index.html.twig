@@ -5,8 +5,9 @@
 {% endblock %}
 
 {% block body %}
+	{{ include("_partials/banner.html.twig", {'name': 'Horoscope' | trans }) }}
+
 	<div class="container-fluid zodiaq_bg py-4 mb-2">
-		<h1 class="text-center my-5">{% trans %}Horoscope{% endtrans %}</h1>
 		<div class="row">
 			{% for zodiaq in zodiaqSigns %}
 				<div class="flip-card col-md-3 col-lg-2">

@@ -48,9 +48,25 @@ class ArticleRepository extends ServiceEntityRepository
 
     public function findbyCategory($categoryId)
     {
-        return $this->createQueryBuilder('p')
-            ->where('p.category = :category_id')
+        $qb = $this->createQueryBuilder('p');
+
+        if ($categoryId !== null) {
+            $qb->where('p.category = :category_id')
+                ->setParameter('category_id', $categoryId);
+        }
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function findRelatedArticles($categoryId, $excludeArticleId, $limit = 5)
+    {
+        return $this->createQueryBuilder('a')
+            ->andWhere('a.category = :category_id')
+            ->andWhere('a.id != :exclude_id')
             ->setParameter('category_id', $categoryId)
+            ->setParameter('exclude_id', $excludeArticleId)
+            ->orderBy('a.createdAt', 'DESC')
+            ->setMaxResults($limit)
             ->getQuery()
             ->getResult();
     }

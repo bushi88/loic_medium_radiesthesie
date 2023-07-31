@@ -24,8 +24,8 @@ class UserFixtures extends Fixture
             $this->passwordEncoder->hashPassword($admin, 'admin')
         );
         $admin->setUsername('Bushi88');
-        $admin->setLastname('CHERCHARI');
-        $admin->setFirstname('Djamel');
+        $admin->setLastname('CH');
+        $admin->setFirstname('Djam');
         $admin->setRoles(['ROLE_ADMIN']);
         $admin->setGender('homme');
         $admin->setBirthdate(new DateTime('08-10-1979'));
@@ -46,7 +46,7 @@ class UserFixtures extends Fixture
             $firstName = ($gender == 'homme') ? $faker->firstNameMale : $faker->firstNameFemale;
             $user->setGender($gender);
             $user->setFirstName($firstName);
-            $min = '-105 years';
+            $min = '-110 years';
             $max = '-18 years';
             $date = $faker->dateTimeBetween($min, $max);
             $user->setBirthdate($date);

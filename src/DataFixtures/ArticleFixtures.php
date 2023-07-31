@@ -31,8 +31,16 @@ class ArticleFixtures extends Fixture implements DependentFixtureInterface
             $article->setTitle($faker->sentence($nbWords = 4, $variableNbWords = true));
             $article->setSlug($this->slugger->slug($article->getTitle()));
             $article->setShortDescription($faker->sentence(6));
-            $article->setDescription($faker->paragraph());
             $article->setImage(rand(1, 11) . '.jpg');
+
+            // Générer la description avec 4 paragraphes d'environ 600 mots chacun
+            $description = '';
+            for ($j = 0; $j < 4; $j++) {
+                $paragraph = $faker->text(600);
+                // Ajouter le paragraphe au texte complet avec une balise <p>
+                $description .= '<p>' . $paragraph . '</p>';
+            }
+            $article->setDescription($description);
 
             $manager->persist($article);
         }
@@ -97,7 +105,13 @@ class ArticleFixtures extends Fixture implements DependentFixtureInterface
             $article->setImage($value['image']);
 
             $article->setSlug($this->slugger->slug($article->getTitle()));
-            $article->setDescription($faker->paragraph());
+
+            $description = '';
+            for ($j = 0; $j < 4; $j++) {
+                $paragraph = $faker->text(600);
+                $description .= '<p>' . $paragraph . '</p>';
+            }
+            $article->setDescription($description);
 
             $manager->persist($article);
         }

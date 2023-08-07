@@ -8,9 +8,10 @@ use App\Repository\CategoryRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-#[Route('/blog', name: 'app_blog_')]
+
 class BlogController extends AbstractController
 {
     private $categories;
@@ -41,33 +42,22 @@ class BlogController extends AbstractController
         ]);
     }
 
-    #[Route('/articlesByCategory/{slug}', name: 'articlesByCategory', methods: ['GET', 'POST'])]
-    public function articlesByCategory(string $slug): Response
+    #[Route([
+        'fr' =>' /blog/{slug}',
+        'en' =>' en/blog/{slug}',
+        'es' =>' es/blog/{slug}',
+    ], name: 'app_blog_articlesByCategory', methods: ['GET'])]
+    public function articlesByCategory(string $slug, Request $request): Response
     {
-        // On utilise le slug pour retrouver l'ID de la catégorie
-        $category = $this->catRepo->findOneBy(['slug' => $slug]);
+        $locale = $request->getLocale();
+        $category = $this->catRepo->findOneBy(['slug' => $slug, 'lang' => $locale]);
 
-        // On vérifie si la catégorie existe avant de récupérer les articles
-        if ($category) {
-            $categoryId = $category->getId();
-
-            // Récupérer les articles par catégorie en utilisant l'ID de catégorie
-            $articlesByCategory = $this->articleRepo->findbyCategory($categoryId);
-            // dump($articlesByCategory);
-
-            return $this->render('blog/articlesByCategory.html.twig', [
-                'articlesByCategory' => $articlesByCategory,
-                'category' => $category,
-            ]);
-        } else {
-            // traduction via controller
-            $message = $this->translator->trans('cette catégorie n\'existe pas.');
-            $this->addFlash('warning', $message);
-            return $this->redirectToRoute('app_home');
-        }
+        return $this->render('blog/articlesByCategory.html.twig', [
+                'articlesByCategory' => $this->catRepo->findOneBy(['slug' => $slug, 'lang' => $locale])
+        ]);
     }
 
-    #[Route('/{slug}', name: 'articleDetails')]
+    #[Route('/blog/{categorie}/{slug}', name: 'app_blog_articleDetails')]
     public function details(Article $article): Response
     {
         if (!$article) {

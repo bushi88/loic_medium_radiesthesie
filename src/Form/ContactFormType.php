@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Contact;
+use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints\Email;
@@ -15,71 +16,78 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class ContactFormType extends AbstractType
 {
+    private TranslatorInterface $translator;
+
+    public function __construct(TranslatorInterface $translator)
+    {
+        $this->translator = $translator;
+    }
+
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
             ->add('firstname', TextType::class, [
                 'required' => true,
-                'label' => 'Prénom',
+                'label' => $this->translator->trans('Prénom'),
                 'attr' => [
                     'class' => 'form-control'
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Veuillez saisir votre prénom',
+                        'message' => $this->translator->trans('Veuillez saisir votre prénom'), 
                     ]),
                 ],
             ])
             ->add('lastname', TextType::class, [
                 'required' => true,
-                'label' => 'Nom',
+                'label' => $this->translator->trans('Nom'), 
                 'attr' => [
                     'class' => 'form-control'
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Veuillez saisir votre nom de famille',
+                        'message' => $this->translator->trans('Veuillez saisir votre nom'), 
                     ]),
                 ],
             ])
             ->add('email', EmailType::class, [
                 'required' => true,
-                'label' => 'Email',
+                'label' => $this->translator->trans('Email'), 
                 'attr' => [
                     'class' => 'form-control'
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Veuillez saisir une adresse email',
+                        'message' => $this->translator->trans('Veuillez saisir votre email'), 
                     ]),
                     new Email([
-                        'message' => 'Veuillez saisir une adresse email valide',
+                        'message' => $this->translator->trans('Veuillez saisir un email valide'), 
                     ]),
                 ],
             ])
             ->add('phone', TextType::class, [
                 'required' => false,
-                'label' => 'Téléphone',
+                'label' => $this->translator->trans('Votre téléphone'), 
                 'attr' => [
                     'class' => 'form-control'
                 ],
             ])
             ->add('object', ChoiceType::class, [
                 'required' => true,
-                'label' => 'Objet du message',
+                'label' => $this->translator->trans('Objet de votre demande'), 
                 'attr' => [
                     'class' => 'form-control'
                 ],
-                'choices' => [
-                    'Sélectionnez un sujet' => '',
-                    'Demande d\'information' => 'demande_information',
-                    'Demande de rappel' => 'demande_rappel',
-                    'Autre' => 'autre',
+                'choices' => [ 
+                    $this->translator->trans('Sélectionnez un sujet') => '',
+                    $this->translator->trans('Demande d\'information')  => 'demande_information',
+                    $this->translator->trans('Demande de rappel')  => 'demande_rappel',
+                    $this->translator->trans('Autre')  => 'autre',
                 ],
             ])
             ->add('message', TextareaType::class, [
                 'required' => true,
-                'label' => 'Votre message',
+                'label' => $this->translator->trans('Votre message'),
                 'attr' => [
                     'class' => 'form-control',
                     'rows' => 4,

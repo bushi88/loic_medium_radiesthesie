@@ -13,6 +13,14 @@
         <source>cette article n'existe pas.</source>
         <target>cette article n'existe pas.</target>
       </trans-unit>
+      <trans-unit id="r.k3QSy" resname="Lire l'article">
+        <source>Lire l'article</source>
+        <target>Lire l'article</target>
+      </trans-unit>
+      <trans-unit id=".dtP2j4" resname="Articles associés">
+        <source>Articles associés</source>
+        <target>Articles associés</target>
+      </trans-unit>
       <trans-unit id="MH7yhLp" resname="À propos">
         <source>À propos</source>
         <target>À propos</target>
@@ -49,13 +57,57 @@
         <source>Demandez une Consultation</source>
         <target>Demandez une Consultation</target>
       </trans-unit>
-      <trans-unit id=".dtP2j4" resname="Articles associés">
-        <source>Articles associés</source>
-        <target>Articles associés</target>
+      <trans-unit id="YNA1nu_" resname="Call:">
+        <source>Call:</source>
+        <target>Call:</target>
       </trans-unit>
-      <trans-unit id="r.k3QSy" resname="Lire l'article">
-        <source>Lire l'article</source>
-        <target>Lire l'article</target>
+      <trans-unit id="F1B9z4R" resname="Email:">
+        <source>Email:</source>
+        <target>Email:</target>
+      </trans-unit>
+      <trans-unit id="HSz9q4O" resname="Visit:">
+        <source>Visit:</source>
+        <target>Visit:</target>
+      </trans-unit>
+      <trans-unit id="YSHyAf3" resname="Bienvenue">
+        <source>Bienvenue</source>
+        <target>Bienvenue</target>
+      </trans-unit>
+      <trans-unit id="sBFnVlo" resname="Vous êtes connecté en tant que">
+        <source>Vous êtes connecté en tant que</source>
+        <target>Vous êtes connecté en tant que</target>
+      </trans-unit>
+      <trans-unit id="UzFhc1Y" resname="Accueil">
+        <source>Accueil</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="gxzCZ4E" resname="La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.">
+        <source>La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.</source>
+        <target>La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.</target>
+      </trans-unit>
+      <trans-unit id="zOnAobl" resname="Mentions légales">
+        <source>Mentions légales</source>
+        <target>Mentions légales</target>
+      </trans-unit>
+      <trans-unit id="X61.dc8" resname="Conditions d'utilisation">
+        <source>Conditions d'utilisation</source>
+        <target>Conditions d'utilisation</target>
+      </trans-unit>
+      <trans-unit id="ma9mBv_" resname="Menu">
+        <source>Menu</source>
+        <target>Menu</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id=".N.6E9J" resname="Horoscope">
+        <source>Horoscope</source>
+        <target>Horoscope</target>
+      </trans-unit>
+      <trans-unit id="jGvAmVN" resname="Blog">
+        <source>Blog</source>
+        <target>Blog</target>
       </trans-unit>
       <trans-unit id="gQ0Mqto" resname="ENVOYER">
         <source>ENVOYER</source>
@@ -64,10 +116,6 @@
       <trans-unit id="Q25hAW4" resname="Play">
         <source>Play</source>
         <target>Play</target>
-      </trans-unit>
-      <trans-unit id="ZyFT62v" resname="A propos">
-        <source>A propos</source>
-        <target>A propos</target>
       </trans-unit>
       <trans-unit id="8n4i7M_" resname="La Radiesthésie : Révélateur de Mystères Cachés">
         <source>La Radiesthésie : Révélateur de Mystères Cachés</source>
@@ -125,18 +173,6 @@
         <source>Formulaire de Contact</source>
         <target>Formulaire de Contact</target>
       </trans-unit>
-      <trans-unit id=".N.6E9J" resname="Horoscope">
-        <source>Horoscope</source>
-        <target>Horoscope</target>
-      </trans-unit>
-      <trans-unit id="eJY5BfO" resname="Dates">
-        <source>Dates</source>
-        <target>Dates</target>
-      </trans-unit>
-      <trans-unit id="4KtK2wG" resname="Traits">
-        <source>Traits</source>
-        <target>Traits</target>
-      </trans-unit>
       <trans-unit id="Av6EX6p" resname="Horoscope hebdomadaire">
         <source>Horoscope hebdomadaire</source>
         <target>Horoscope hebdomadaire</target>
@@ -149,53 +185,13 @@
         <source>Aucune donnée d'horoscope disponible pour</source>
         <target>Aucune donnée d'horoscope disponible pour</target>
       </trans-unit>
-      <trans-unit id="UzFhc1Y" resname="Accueil">
-        <source>Accueil</source>
-        <target>Accueil</target>
+      <trans-unit id="eJY5BfO" resname="Dates">
+        <source>Dates</source>
+        <target>Dates</target>
       </trans-unit>
-      <trans-unit id="gxzCZ4E" resname="La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.">
-        <source>La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.</source>
-        <target>La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.</target>
-      </trans-unit>
-      <trans-unit id="zOnAobl" resname="Mentions légales">
-        <source>Mentions légales</source>
-        <target>Mentions légales</target>
-      </trans-unit>
-      <trans-unit id="X61.dc8" resname="Conditions d'utilisation">
-        <source>Conditions d'utilisation</source>
-        <target>Conditions d'utilisation</target>
-      </trans-unit>
-      <trans-unit id="ma9mBv_" resname="Menu">
-        <source>Menu</source>
-        <target>Menu</target>
-      </trans-unit>
-      <trans-unit id="K1w9JnI" resname="Contact">
-        <source>Contact</source>
-        <target>Contact</target>
-      </trans-unit>
-      <trans-unit id="jGvAmVN" resname="Blog">
-        <source>Blog</source>
-        <target>Blog</target>
-      </trans-unit>
-      <trans-unit id="YNA1nu_" resname="Call:">
-        <source>Call:</source>
-        <target>Call:</target>
-      </trans-unit>
-      <trans-unit id="F1B9z4R" resname="Email:">
-        <source>Email:</source>
-        <target>Email:</target>
-      </trans-unit>
-      <trans-unit id="HSz9q4O" resname="Visit:">
-        <source>Visit:</source>
-        <target>Visit:</target>
-      </trans-unit>
-      <trans-unit id="YSHyAf3" resname="Bienvenue">
-        <source>Bienvenue</source>
-        <target>Bienvenue</target>
-      </trans-unit>
-      <trans-unit id="sBFnVlo" resname="Vous êtes connecté en tant que">
-        <source>Vous êtes connecté en tant que</source>
-        <target>Vous êtes connecté en tant que</target>
+      <trans-unit id="4KtK2wG" resname="Traits">
+        <source>Traits</source>
+        <target>Traits</target>
       </trans-unit>
     </body>
   </file>

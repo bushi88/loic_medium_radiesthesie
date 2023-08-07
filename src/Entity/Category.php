@@ -44,6 +44,9 @@ class Category
     #[ORM\OneToMany(mappedBy: 'category', targetEntity: Article::class)]
     private Collection $articles;
 
+    #[ORM\Column(length: 3)]
+    private ?string $lang = null;
+
     public function __construct()
     {
         $this->createdAt = new \DateTimeImmutable();
@@ -159,6 +162,18 @@ class Category
                 $article->setCategory(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getLang(): ?string
+    {
+        return $this->lang;
+    }
+
+    public function setLang(string $lang): static
+    {
+        $this->lang = $lang;
 
         return $this;
     }

@@ -1,9 +1,13 @@
 <!-- Header Start -->
 <header>
 	<nav class="container-fluid d-flex justify-content-center justify-content-md-end flex-nowrap">
-		<a class="mx-1" href="#" aria-label="English Flag"><img src="{{ asset('assets/images/flags/en.png') }}" alt="flag" class="img-fluid" style="max-height: 14px;"></a>
-		<a class="mx-1" href="#" aria-label="French Flag"><img src="{{ asset('assets/images/flags/fr.png') }}" alt="flag" class="img-fluid" style="max-height: 14px;"></a>
-		<a class="mx-1" href="#" aria-label="Spain Flag"><img src="{{ asset('assets/images/flags/sp.png') }}" alt="flag" class="img-fluid" style="max-height: 14px;"></a>
+		{% for locale in locales %}
+			{% if locale != app.request.locale %}
+				<a class="mx-1" href="{{ path ('app_change_locale', {'locale' : locale} ) }}" aria-label="Flag">
+					<img src="{{ asset('assets/images/flags/' ~ locale ~ '.png') }}" alt="flag" class="img-fluid" style="max-height: 14px;">
+				</a>
+			{% endif %}
+		{% endfor %}
 	</nav>
 	<div class="header_01 isSticky zodiaq_bg_light">
 		<div class="container">
@@ -33,9 +37,11 @@
 							<li>
 								<a href="{{ path('app_home') }}#contact_section">{% trans %}Contact{% endtrans %}</a>
 							</li>
-							<li class="">
-								<a href="{{ path('app_zodiaq_all') }}">{% trans %}Horoscope{% endtrans %}</a>
-							</li>
+							{% if app.request.locale == 'fr' %}
+								<li class="">
+									<a href="{{ path('app_zodiaq_all') }}">{% trans %}Horoscope{% endtrans %}</a>
+								</li>
+							{% endif %}
 							<li class="menu-item-has-children">
 								<a href="{{ path('app_home') }}#blog_section">{% trans %}Blog{% endtrans %}</a>
 								<ul class="sub-menu">

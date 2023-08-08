@@ -29,6 +29,9 @@ class Zodiaq
     #[ORM\Column(type: Types::TEXT)]
     private ?string $traits = null;
 
+    #[ORM\Column(length: 3)]
+    private ?string $lang = null;
+
     public function __construct()
     {
         $this->createdAt = new \DateTimeImmutable();
@@ -83,6 +86,18 @@ class Zodiaq
     public function setTraits(string $traits): static
     {
         $this->traits = $traits;
+
+        return $this;
+    }
+
+    public function getLang(): ?string
+    {
+        return $this->lang;
+    }
+
+    public function setLang(string $lang): static
+    {
+        $this->lang = $lang;
 
         return $this;
     }

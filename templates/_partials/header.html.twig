@@ -34,7 +34,7 @@
 								</li>
 							{% endif %}
 							<li class="menu-item-has-children">
-								<a href="{{ path('app_home') }}#blog_section">{% trans %}Blog{% endtrans %}</a>
+								<a href="{{ path('app_blog_index') }}">{% trans %}Blog{% endtrans %}</a>
 								<ul class="sub-menu">
 									{{ render(controller('App\\Controller\\Pages\\BlogController::menu')) }}
 								</ul>

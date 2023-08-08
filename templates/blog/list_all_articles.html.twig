@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Blog
+{% endblock %}
+
+{% block body %}
+	{{ include("_partials/banner.html.twig", {'name': 'Blog' }) }}
+
+	<!-- Blog Page Section Start -->
+	<section class="comon_section blog_page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-5">
+					<div class="blog_sidebar px-4">
+						<div class="widget">
+							<h3 class="widget-title px-4">Blog Categories</h3>
+							<ul>
+
+								{{ render(controller('App\\Controller\\Pages\\BlogController::menu')) }}
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-7">
+					<div class="container">
+						<div class="row">
+
+							{% for article in articles %}
+
+								<div class="col-lg-6 col-md-6">
+									<div class="blog_01">
+										<div class="b01_thumb">
+											<img src="{{ asset('assets/images/articles/'~ article.image) }}" alt="{{ article.title }}"/>
+										</div>
+										<div class="b01_det">
+											<div class="b01_meta">
+												<span>
+													<i class="bx bxs-time-five"></i>
+													<a href="#">{{ article.createdAt|date('d-m-Y') }}</a>
+												</span>
+											</div>
+											<h3>
+												<a title="{{ article.title }}" href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }}">{{ article.title | u.truncate(30, '...', true) }}</a>
+											</h3>
+											<a href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }}" class="learn_more_lnk">Lire l'article</a>
+										</div>
+									</div>
+								</div>
+
+							{% endfor %}
+
+						</div>
+					</div>
+
+					<div class="row pt40">
+						<div class="col-lg-12">
+							<div class="fnc_pagination">
+								{{ knp_pagination_render(articles) }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Blog Page Section End -->
+
+{% endblock %}
+{% block css %}
+	<style>
+		.blog_sidebar ul li a:before {
+			content: "";
+			font-family: unset;
+			font-size: initial;
+			color: initial;
+			position: initial;
+			left: -3px;
+			top: 1px;
+			color: inherit;
+			transition: inherit;
+			-moz-transition: inherit;
+			-webkit-transition: inherit;
+		}
+	</style>
+{% endblock %}

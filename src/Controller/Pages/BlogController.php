@@ -5,11 +5,12 @@ namespace App\Controller\Pages;
 use App\Entity\Article;
 use App\Repository\ArticleRepository;
 use App\Repository\CategoryRepository;
+use Knp\Component\Pager\PaginatorInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Contracts\Translation\TranslatorInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
 class BlogController extends AbstractController
@@ -43,21 +44,6 @@ class BlogController extends AbstractController
     }
 
     #[Route([
-        'fr' =>' /blog/{slug}',
-        'en' =>' en/blog/{slug}',
-        'es' =>' es/blog/{slug}',
-    ], name: 'app_blog_articlesByCategory', methods: ['GET'])]
-    public function articlesByCategory(string $slug, Request $request): Response
-    {
-        $locale = $request->getLocale();
-        $category = $this->catRepo->findOneBy(['slug' => $slug, 'lang' => $locale]);
-
-        return $this->render('blog/articlesByCategory.html.twig', [
-                'articlesByCategory' => $this->catRepo->findOneBy(['slug' => $slug, 'lang' => $locale])
-        ]);
-    }
-
-    #[Route([
         'fr' =>' /blog/{categorie}/{slug}',
         'en' =>' en/blog/{categorie}/{slug}',
         'es' =>' es/blog/{categorie}/{slug}',
@@ -82,4 +68,50 @@ class BlogController extends AbstractController
             'relatedArticles' => $relatedArticles,
         ]);
     }
+
+    #[Route([
+        'fr' =>' /blog/{slug}',
+        'en' =>' en/blog/{slug}',
+        'es' =>' es/blog/{slug}',
+    ], name: 'app_blog_articlesByCategory', methods: ['GET'])]
+    public function articlesByCategory(string $slug, PaginatorInterface $paginator, Request $request): Response
+    {
+        $locale = $request->getLocale();
+
+        $article = $this->catRepo->findOneBy(['slug' => $slug, 'lang' => $locale])->getArticles();
+
+        $articles = $paginator->paginate(
+            $article,
+            $request->query->getInt('page', 1),
+            9
+        );
+
+        return $this->render('blog/articlesByCategory.html.twig', [
+            'articles' => $articles,
+        ]);
+    }
+
+    #[Route([
+        'fr' =>' /blog',
+        'en' =>' en/blog',
+        'es' =>' es/blog',
+    ], name: 'app_blog_index', methods: ['GET'])]
+    public function index(PaginatorInterface $paginator, Request $request): Response
+    {
+
+        $locale = $request->getLocale();
+        $article = $this->articleRepo->findBy(['lang' => $locale], ['createdAt' => 'DESC']);
+
+        $articles = $paginator->paginate(
+            $article,
+            $request->query->getInt('page', 1),
+            8
+        );
+
+        return $this->render('blog/list_all_articles.html.twig', [
+            'articles' => $articles,
+        ]);
+    }
+
+
 }

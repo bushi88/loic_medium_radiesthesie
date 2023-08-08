@@ -30,7 +30,7 @@ class Zodiaq
     private ?string $traits = null;
 
     #[ORM\Column(length: 3)]
-    private ?string $lang = null;
+    private ?string $lang = 'fr';
 
     public function __construct()
     {

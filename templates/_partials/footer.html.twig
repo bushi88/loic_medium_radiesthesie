@@ -60,18 +60,17 @@
 					<a href="#">Loic</a>. All rights reserved.
 				</p>
 				<p>
-					{% for locale in locales %}
+					{# {% for locale in locales %}
 						{% if locale == 'fr' %}
 							<a class="text-decoration-none mx-3" href="{{ path(app.request.attributes.get('_route'), {'_locale': locale }) }}">
 								<img src="{{ asset('assets/images/flag/fr.png') }}" alt="{{locale}}" height="20"/>
 							</a>
 						{% else %}
-							
 							<a class="text-decoration-none mx-3" href="{{ path(app.request.attributes.get('_route'), {'_locale': locale }) }}">
 								<img src="{{ asset('assets/images/flag/' ~ locale ~ '.png') }}" alt="{{locale}}" height="20"/>
 							</a>
 						{% endif %}
-					{% endfor %}
+					{% endfor %} #}
 				</p>
 			</div>
 		</div>

@@ -44,9 +44,9 @@ class BlogController extends AbstractController
     }
 
     #[Route([
-        'fr' =>' /blog/{categorie}/{slug}',
-        'en' =>' en/blog/{categorie}/{slug}',
-        'es' =>' es/blog/{categorie}/{slug}',
+        'fr' => '/blog/{categorie}/{slug}',
+        'en' => '/en/blog/{categorie}/{slug}',
+        'es' => '/es/blog/{categorie}/{slug}',
     ], name: 'app_blog_articleDetails', methods: ['GET'])]
     public function details(Article $article): Response
     {
@@ -70,9 +70,9 @@ class BlogController extends AbstractController
     }
 
     #[Route([
-        'fr' =>' /blog/{slug}',
-        'en' =>' en/blog/{slug}',
-        'es' =>' es/blog/{slug}',
+        'fr' => '/blog/{slug}',
+        'en' => '/en/blog/{slug}',
+        'es' => '/es/blog/{slug}',
     ], name: 'app_blog_articlesByCategory', methods: ['GET'])]
     public function articlesByCategory(string $slug, PaginatorInterface $paginator, Request $request): Response
     {
@@ -92,9 +92,9 @@ class BlogController extends AbstractController
     }
 
     #[Route([
-        'fr' =>' /blog',
-        'en' =>' en/blog',
-        'es' =>' es/blog',
+        'fr' => '/blog',
+        'en' => '/en/blog',
+        'es' => '/es/blog',
     ], name: 'app_blog_index', methods: ['GET'])]
     public function index(PaginatorInterface $paginator, Request $request): Response
     {
@@ -112,6 +112,4 @@ class BlogController extends AbstractController
             'articles' => $articles,
         ]);
     }
-
-
 }

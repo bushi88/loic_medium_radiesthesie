@@ -46,7 +46,7 @@ class Article
     private ?Category $category = null;
 
     #[ORM\Column(length: 3)]
-    private ?string $lang = null;
+    private ?string $lang = 'fr';
 
     public function __construct()
     {

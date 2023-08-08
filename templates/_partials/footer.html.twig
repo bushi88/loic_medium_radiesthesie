@@ -61,12 +61,21 @@
 				</p>
 				<p>
 					{% for locale in locales %}
+						{# je verifie si je suis sur la page articleDetails ou articlesByCategory #}
+						{% if app.request.attributes.get('_route') == 'app_blog_articleDetails' %}
+							{% set query = {'_locale': locale, 'slug': app.request.attributes.get('slug'), 'categorie': app.request.attributes.get('categorie')} %}
+						{% elseif app.request.attributes.get('_route') == 'app_blog_articlesByCategory' %}
+							{% set query = {'_locale': locale, 'slug': app.request.attributes.get('slug')} %}
+						{% else %}
+							{% set query = {'_locale': locale} %}
+						{% endif %}
+
 						{% if locale == 'fr' %}
-							<a class="text-decoration-none mx-3" href="{{ path(app.request.attributes.get('_route'), {'_locale': locale }) }}">
+							<a class="text-decoration-none mx-3" href="{{ path(app.request.attributes.get('_route'), query ) }}">
 								<img src="{{ asset('assets/images/flag/fr.png') }}" alt="{{locale}}" height="20"/>
 							</a>
-						{% else %}
-							<a class="text-decoration-none mx-3" href="{{ path(app.request.attributes.get('_route'), {'_locale': locale }) }}">
+						{% else %}	
+							<a class="text-decoration-none mx-3" href="{{ path(app.request.attributes.get('_route'), query) }}">
 								<img src="{{ asset('assets/images/flag/' ~ locale ~ '.png') }}" alt="{{locale}}" height="20"/>
 							</a>
 						{% endif %}

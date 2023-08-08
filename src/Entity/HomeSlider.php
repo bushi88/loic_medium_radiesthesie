@@ -29,6 +29,9 @@ class HomeSlider
     #[ORM\Column(nullable: true)]
     private ?bool $isDisplayed = null;
 
+    #[ORM\Column(length: 3)]
+    private ?string $lang = null;
+
     public function __construct()
     {
         $this->createdAt = new \DateTimeImmutable();
@@ -95,6 +98,18 @@ class HomeSlider
     public function setIsDisplayed(?bool $isDisplayed): self
     {
         $this->isDisplayed = $isDisplayed;
+
+        return $this;
+    }
+
+    public function getLang(): ?string
+    {
+        return $this->lang;
+    }
+
+    public function setLang(string $lang): static
+    {
+        $this->lang = $lang;
 
         return $this;
     }

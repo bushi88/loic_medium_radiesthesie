@@ -565,6 +565,10 @@
         <source>There is already an account with this email</source>
         <target>__There is already an account with this email</target>
       </trans-unit>
+      <trans-unit id="Fe2zEyl" resname="Please enter your email">
+        <source>Please enter your email</source>
+        <target>__Please enter your email</target>
+      </trans-unit>
       <trans-unit id="YXZ26gK" resname="Please enter a password">
         <source>Please enter a password</source>
         <target>__Please enter a password</target>
@@ -572,6 +576,10 @@
       <trans-unit id=".esazsm" resname="Your password should be at least {{ limit }} characters">
         <source>Your password should be at least {{ limit }} characters</source>
         <target>__Your password should be at least {{ limit }} characters</target>
+      </trans-unit>
+      <trans-unit id=".rlwsou" resname="Veuillez saisir un nom d'utilisateur">
+        <source>Veuillez saisir un nom d'utilisateur</source>
+        <target>__Veuillez saisir un nom d'utilisateur</target>
       </trans-unit>
       <trans-unit id="yjKRUrU" resname="Veuillez saisir votre prénom">
         <source>Veuillez saisir votre prénom</source>
@@ -581,6 +589,10 @@
         <source>Veuillez saisir votre nom de famille</source>
         <target>__Veuillez saisir votre nom de famille</target>
       </trans-unit>
+      <trans-unit id="_WD_OyJ" resname="Veuillez saisir votre date de naissance">
+        <source>Veuillez saisir votre date de naissance</source>
+        <target>__Veuillez saisir votre date de naissance</target>
+      </trans-unit>
       <trans-unit id="xAOilHR" resname="Veuillez saisir une adresse email">
         <source>Veuillez saisir une adresse email</source>
         <target>__Veuillez saisir une adresse email</target>
@@ -589,21 +601,9 @@
         <source>Veuillez saisir une adresse email valide</source>
         <target>__Veuillez saisir une adresse email valide</target>
       </trans-unit>
-      <trans-unit id=".rlwsou" resname="Veuillez saisir un nom d'utilisateur">
-        <source>Veuillez saisir un nom d'utilisateur</source>
-        <target>__Veuillez saisir un nom d'utilisateur</target>
-      </trans-unit>
-      <trans-unit id="_WD_OyJ" resname="Veuillez saisir votre date de naissance">
-        <source>Veuillez saisir votre date de naissance</source>
-        <target>__Veuillez saisir votre date de naissance</target>
-      </trans-unit>
       <trans-unit id="IaE5GBl" resname="You should agree to our terms.">
         <source>You should agree to our terms.</source>
         <target>__You should agree to our terms.</target>
-      </trans-unit>
-      <trans-unit id="Fe2zEyl" resname="Please enter your email">
-        <source>Please enter your email</source>
-        <target>__Please enter your email</target>
       </trans-unit>
     </body>
   </file>

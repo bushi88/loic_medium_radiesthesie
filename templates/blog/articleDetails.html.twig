@@ -67,14 +67,14 @@
 											<div class="b01_meta">
 												<span>
 													<i class="bx bxs-time-five"></i>
-													<a href="{{ path('app_blog_articleDetails', {'slug': article.slug}) }}">{{ article.createdAt|date('Y-m-d H:i') }}</a>
+													<a href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }}">{{ article.createdAt|date('Y-m-d H:i') }}</a>
 												</span>
 											</div>
 											<h3>
 												<a href="#">{{ article.title }}</a>
 											</h3>
 											<div class="text-right">
-												<a href="{{ path('app_blog_articleDetails', {'slug': article.slug}) }}" class="learn_more_lnk">{% trans %}Lire l'article{% endtrans %}</a>
+												<a href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }} class="learn_more_lnk">{% trans %}Lire l'article{% endtrans %}</a>
 											</div>
 										</div>
 									</div>

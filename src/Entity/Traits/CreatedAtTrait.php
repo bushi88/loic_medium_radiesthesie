@@ -16,6 +16,7 @@ trait CreatedAtTrait
         return $this->createdAt;
     }
 
+    #[ORM\PrePersist]
     public function setCreatedAt(?DateTimeImmutable $createdAt): self
     {
         $this->createdAt = $createdAt;

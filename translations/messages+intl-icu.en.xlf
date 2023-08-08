@@ -2,172 +2,112 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
     <header>
-      <tool tool-id="symfony" tool-name="Symfony"/>
+      <tool tool-id="symfony" tool-name="Symfony" />
     </header>
     <body>
+      <trans-unit id="Pl_9vzt" resname="cette article n'existe pas.">
+        <source>cette article n'existe pas.</source>
+        <target>this article does not exist.</target>
+      </trans-unit>
+      <trans-unit id="4yW.j5A" resname="Prénom">
+        <source>Prénom</source>
+        <target>First name</target>
+      </trans-unit>
+      <trans-unit id="yjKRUrU" resname="Veuillez saisir votre prénom">
+        <source>Veuillez saisir votre prénom</source>
+        <target>Please enter your first name</target>
+      </trans-unit>
+      <trans-unit id="ssEkU20" resname="Nom">
+        <source>Nom</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="6XY6UWK" resname="Veuillez saisir votre nom">
+        <source>Veuillez saisir votre nom</source>
+        <target>Please enter your name</target>
+      </trans-unit>
+      <trans-unit id="lpzL089" resname="Email">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="AUqS.6D" resname="Veuillez saisir votre email">
+        <source>Veuillez saisir votre email</source>
+        <target>Please enter your email address</target>
+      </trans-unit>
+      <trans-unit id="IDCqHMZ" resname="Veuillez saisir un email valide">
+        <source>Veuillez saisir un email valide</source>
+        <target>Please enter a valid email</target>
+      </trans-unit>
+      <trans-unit id="yBFB55A" resname="Votre téléphone">
+        <source>Votre téléphone</source>
+        <target>Your phone</target>
+      </trans-unit>
+      <trans-unit id="KnQ.wAP" resname="Objet de votre demande">
+        <source>Objet de votre demande</source>
+        <target>Purpose of your request</target>
+      </trans-unit>
+      <trans-unit id="s4oX5Fe" resname="Sélectionnez un sujet">
+        <source>Sélectionnez un sujet</source>
+        <target>Select a subject</target>
+      </trans-unit>
+      <trans-unit id="pgICobQ" resname="Demande d'information">
+        <source>Demande d'information</source>
+        <target>Information request</target>
+      </trans-unit>
+      <trans-unit id="njLrh1T" resname="Demande de rappel">
+        <source>Demande de rappel</source>
+        <target>Callback request</target>
+      </trans-unit>
+      <trans-unit id="63LhaDu" resname="Autre">
+        <source>Autre</source>
+        <target>Other</target>
+      </trans-unit>
+      <trans-unit id="QERVmkw" resname="Votre message">
+        <source>Votre message</source>
+        <target>Your message</target>
+      </trans-unit>
+      <trans-unit id="r.k3QSy" resname="Lire l'article">
+        <source>Lire l'article</source>
+        <target>Read the article</target>
+      </trans-unit>
+      <trans-unit id=".dtP2j4" resname="Articles associés">
+        <source>Articles associés</source>
+        <target>Related articles</target>
+      </trans-unit>
       <trans-unit id="MH7yhLp" resname="À propos">
         <source>À propos</source>
-        <target>About Us</target>
+        <target>About us</target>
       </trans-unit>
       <trans-unit id="y2Qv6hP" resname="Bienvenue sur notre site dédié à la radiesthésie et à la voyance. Notre medium radiesthésiste possède un don unique qui lui permet de percevoir les énergies et de recevoir des informations intuitives du monde spirituel. Avec des années d'expérience dans le domaine de la radiesthésie, notre medium a aidé de nombreuses personnes à trouver des réponses, à guérir des blessures émotionnelles, et à retrouver un équilibre dans leur vie.">
         <source>Bienvenue sur notre site dédié à la radiesthésie et à la voyance. Notre medium radiesthésiste possède un don unique qui lui permet de percevoir les énergies et de recevoir des informations intuitives du monde spirituel. Avec des années d'expérience dans le domaine de la radiesthésie, notre medium a aidé de nombreuses personnes à trouver des réponses, à guérir des blessures émotionnelles, et à retrouver un équilibre dans leur vie.</source>
-        <target>Welcome to our website dedicated to radiesthesia and clairvoyance. Our radiesthesia medium has a unique gift that allows them to perceive energies and receive intuitive information from the spiritual world. With years of experience in the field of radiesthesia, our medium has helped many people find answers, heal emotional wounds, and regain balance in their lives.</target>
+        <target>Welcome to our website dedicated to dowsing and clairvoyance. Our dowsing medium possesses a unique gift that enables her to perceive energies and receive intuitive information from the spiritual world. With years of experience in the field of dowsing, our medium has helped many people find answers, heal emotional wounds, and regain balance in their lives.</target>
       </trans-unit>
       <trans-unit id="avzbPDX" resname="Comment la radiesthésie fonctionne-t-elle ?">
         <source>Comment la radiesthésie fonctionne-t-elle ?</source>
-        <target>How does radiesthesia work?</target>
+        <target>How does dowsing work?</target>
       </trans-unit>
       <trans-unit id="1ITxho3" resname="La radiesthésie est une pratique ancienne qui utilise des outils tels que des pendules et des baguettes pour capter et interpréter les vibrations énergétiques qui nous entourent. Notre medium radiesthésiste est en mesure d'utiliser ces outils pour localiser des objets perdus, détecter des blocages énergétiques dans le corps, et répondre à des questions importantes concernant le passé, le présent et l'avenir.">
         <source>La radiesthésie est une pratique ancienne qui utilise des outils tels que des pendules et des baguettes pour capter et interpréter les vibrations énergétiques qui nous entourent. Notre medium radiesthésiste est en mesure d'utiliser ces outils pour localiser des objets perdus, détecter des blocages énergétiques dans le corps, et répondre à des questions importantes concernant le passé, le présent et l'avenir.</source>
-        <target>Radiesthesia is an ancient practice that uses tools such as pendulums and rods to capture and interpret the energetic vibrations that surround us. Our radiesthesia medium is able to use these tools to locate lost objects, detect energetic blockages in the body, and answer important questions about the past, present, and future.</target>
+        <target>Dowsing is an ancient practice that uses tools such as pendulums and rods to pick up and interpret the energy vibrations around us. Our dowsing medium is able to use these tools to locate lost objects, detect energy blockages in the body, and answer important questions about the past, present and future.</target>
       </trans-unit>
       <trans-unit id="A5DJnwG" resname="Consultations de voyance personnalisées">
         <source>Consultations de voyance personnalisées</source>
-        <target>Personalized Clairvoyance Consultations</target>
+        <target>Personalized clairvoyance consultations</target>
       </trans-unit>
       <trans-unit id="7Gk1R8C" resname="Notre medium propose des consultations de voyance personnalisées, où il se connecte avec votre énergie et celle de l'univers pour vous offrir des messages et des conseils spécifiquement adaptés à votre situation. Que vous ayez des questions sur votre carrière, vos relations, votre santé ou votre spiritualité, notre medium radiesthésiste est là pour vous guider sur votre chemin de vie.">
         <source>Notre medium propose des consultations de voyance personnalisées, où il se connecte avec votre énergie et celle de l'univers pour vous offrir des messages et des conseils spécifiquement adaptés à votre situation. Que vous ayez des questions sur votre carrière, vos relations, votre santé ou votre spiritualité, notre medium radiesthésiste est là pour vous guider sur votre chemin de vie.</source>
-        <target>Our medium offers personalized clairvoyance consultations, where they connect with your energy and that of the universe to provide you with messages and advice specifically tailored to your situation. Whether you have questions about your career, relationships, health, or spirituality, our radiesthesia medium is here to guide you on your life path.</target>
+        <target>Our medium offers personalized clairvoyance consultations, where he connects with your energy and that of the universe to offer you messages and advice specifically tailored to your situation. Whether you have questions about your career, relationships, health or spirituality, our dowsing medium is here to guide you on your life's path.</target>
       </trans-unit>
       <trans-unit id="ItnSNJ3" resname="Contactez-nous dès aujourd'hui">
         <source>Contactez-nous dès aujourd'hui</source>
-        <target>Contact Us Today</target>
+        <target>Contact us today</target>
       </trans-unit>
       <trans-unit id="wDvyWtT" resname="Si vous avez besoin de réponses, de guérison ou de soutien dans votre vie, n'hésitez pas à nous contacter pour une consultation avec notre medium radiesthésiste. Nous sommes là pour vous aider à trouver la clarté et le réconfort dont vous avez besoin.">
         <source>Si vous avez besoin de réponses, de guérison ou de soutien dans votre vie, n'hésitez pas à nous contacter pour une consultation avec notre medium radiesthésiste. Nous sommes là pour vous aider à trouver la clarté et le réconfort dont vous avez besoin.</source>
-        <target>If you need answers, healing, or support in your life, don't hesitate to contact us for a consultation with our radiesthesia medium. We are here to help you find the clarity and comfort you need.</target>
+        <target>If you need answers, healing or support in your life, don't hesitate to contact us for a consultation with our dowsing medium. We're here to help you find the clarity and comfort you need.</target>
       </trans-unit>
       <trans-unit id="3uCRFOT" resname="Demandez une Consultation">
         <source>Demandez une Consultation</source>
         <target>Request a Consultation</target>
-      </trans-unit>
-      <trans-unit id=".dtP2j4" resname="Articles associés">
-        <source>Articles associés</source>
-        <target>Related Articles</target>
-      </trans-unit>
-      <trans-unit id="r.k3QSy" resname="Lire l'article">
-        <source>Lire l'article</source>
-        <target>Read the Article</target>
-      </trans-unit>
-      <trans-unit id="gQ0Mqto" resname="ENVOYER">
-        <source>ENVOYER</source>
-        <target>SEND</target>
-      </trans-unit>
-      <trans-unit id="Q25hAW4" resname="Play">
-        <source>Play</source>
-        <target>Play</target>
-      </trans-unit>
-      <trans-unit id="ZyFT62v" resname="A propos">
-        <source>A propos</source>
-        <target>About</target>
-      </trans-unit>
-      <trans-unit id="8n4i7M_" resname="La Radiesthésie : Révélateur de Mystères Cachés">
-        <source>La Radiesthésie : Révélateur de Mystères Cachés</source>
-        <target>Radiesthesia: Revealer of Hidden Mysteries</target>
-      </trans-unit>
-      <trans-unit id="pbuxkdH" resname="Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour vous guider vers une harmonie éclairée.">
-        <source>Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour vous guider vers une harmonie éclairée.</source>
-        <target>Explore the hidden mysteries with radiesthesia. As a dedicated enthusiast of this practice, I offer you clarity, serenity, and balance to understand your inner self. Dive into the captivating universe of radiesthesia, where buried answers reveal themselves to guide you towards enlightened harmony.</target>
-      </trans-unit>
-      <trans-unit id="BD1ipjE" resname="Radiesthésie pendulaire">
-        <source>Radiesthésie pendulaire</source>
-        <target>Pendulum Radiesthesia</target>
-      </trans-unit>
-      <trans-unit id="5.U.xsC" resname="Radiesthésie médicale">
-        <source>Radiesthésie médicale</source>
-        <target>Medical Radiesthesia</target>
-      </trans-unit>
-      <trans-unit id="GW3UX.p" resname="Radiesthésie divinatoire">
-        <source>Radiesthésie divinatoire</source>
-        <target>Divinatory Radiesthesia</target>
-      </trans-unit>
-      <trans-unit id="PMYoOKD" resname="Radiesthésie alimentaire">
-        <source>Radiesthésie alimentaire</source>
-        <target>Dietary Radiesthesia</target>
-      </trans-unit>
-      <trans-unit id="fKqvGDa" resname="Radiesthésie spirituelle">
-        <source>Radiesthésie spirituelle</source>
-        <target>Spiritual Radiesthesia</target>
-      </trans-unit>
-      <trans-unit id="tkaUcV5" resname="Radiesthésie émotionnelle">
-        <source>Radiesthésie émotionnelle</source>
-        <target>Emotional Radiesthesia</target>
-      </trans-unit>
-      <trans-unit id="CpdoREZ" resname="Types de Radiesthésie">
-        <source>Types de Radiesthésie</source>
-        <target>Types of Radiesthesia</target>
-      </trans-unit>
-      <trans-unit id="BF5fqFc" resname="Clients satisfaits">
-        <source>Clients satisfaits</source>
-        <target>Satisfied Clients</target>
-      </trans-unit>
-      <trans-unit id="AaVEtJv" resname="Projets Terminés">
-        <source>Projets Terminés</source>
-        <target>Completed Projects</target>
-      </trans-unit>
-      <trans-unit id="WesDQt6" resname="Heures de Travail">
-        <source>Heures de Travail</source>
-        <target>Working Hours</target>
-      </trans-unit>
-      <trans-unit id="yjToSmC" resname="Explorez les Mystères de la Radiesthésie">
-        <source>Explorez les Mystères de la Radiesthésie</source>
-        <target>Explore the Mysteries of Radiesthesia</target>
-      </trans-unit>
-      <trans-unit id="HX91IEF" resname="Formulaire de Contact">
-        <source>Formulaire de Contact</source>
-        <target>Contact Form</target>
-      </trans-unit>
-      <trans-unit id=".N.6E9J" resname="Horoscope">
-        <source>Horoscope</source>
-        <target>Horoscope</target>
-      </trans-unit>
-      <trans-unit id="eJY5BfO" resname="Dates">
-        <source>Dates</source>
-        <target>Dates</target>
-      </trans-unit>
-      <trans-unit id="4KtK2wG" resname="Traits">
-        <source>Traits</source>
-        <target>Traits</target>
-      </trans-unit>
-      <trans-unit id="Av6EX6p" resname="Horoscope hebdomadaire">
-        <source>Horoscope hebdomadaire</source>
-        <target>Weekly Horoscope</target>
-      </trans-unit>
-      <trans-unit id="2.uDw7I" resname="Date de publication">
-        <source>Date de publication</source>
-        <target>Publication Date</target>
-      </trans-unit>
-      <trans-unit id="3kLnYRg" resname="Aucune donnée d'horoscope disponible pour">
-        <source>Aucune donnée d'horoscope disponible pour</source>
-        <target>No horoscope data available for</target>
-      </trans-unit>
-      <trans-unit id="UzFhc1Y" resname="Accueil">
-        <source>Accueil</source>
-        <target>Home</target>
-      </trans-unit>
-      <trans-unit id="gxzCZ4E" resname="La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.">
-        <source>La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.</source>
-        <target>Radiesthesia is the medium that opens the doors of alternative medicine, where intuition blends with science to unveil the mysteries of healing.</target>
-      </trans-unit>
-      <trans-unit id="zOnAobl" resname="Mentions légales">
-        <source>Mentions légales</source>
-        <target>Legal Notice</target>
-      </trans-unit>
-      <trans-unit id="X61.dc8" resname="Conditions d'utilisation">
-        <source>Conditions d'utilisation</source>
-        <target>Terms of Use</target>
-      </trans-unit>
-      <trans-unit id="ma9mBv_" resname="Menu">
-        <source>Menu</source>
-        <target>Menu</target>
-      </trans-unit>
-      <trans-unit id="K1w9JnI" resname="Contact">
-        <source>Contact</source>
-        <target>Contact</target>
-      </trans-unit>
-      <trans-unit id="jGvAmVN" resname="Blog">
-        <source>Blog</source>
-        <target>Blog</target>
       </trans-unit>
       <trans-unit id="YNA1nu_" resname="Call:">
         <source>Call:</source>
@@ -189,13 +129,121 @@
         <source>Vous êtes connecté en tant que</source>
         <target>You are logged in as</target>
       </trans-unit>
-      <trans-unit id="XBgSm6K" resname="cette catégorie n'existe pas.">
-        <source>cette catégorie n'existe pas.</source>
-        <target>This category does not exist.</target>
+      <trans-unit id="UzFhc1Y" resname="Accueil">
+        <source>Accueil</source>
+        <target>Home</target>
       </trans-unit>
-      <trans-unit id="Pl_9vzt" resname="cette article n'existe pas.">
-        <source>cette article n'existe pas.</source>
-        <target>This article does not exist.</target>
+      <trans-unit id="gxzCZ4E" resname="La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.">
+        <source>La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.</source>
+        <target>Dowsing is the medium that opens the doors to alternative medicine, where intuition blends with science to unveil the mysteries of healing.</target>
+      </trans-unit>
+      <trans-unit id="zOnAobl" resname="Mentions légales">
+        <source>Mentions légales</source>
+        <target>Terms of use</target>
+      </trans-unit>
+      <trans-unit id="X61.dc8" resname="Conditions d'utilisation">
+        <source>Conditions d'utilisation</source>
+        <target>Terms of use</target>
+      </trans-unit>
+      <trans-unit id="ma9mBv_" resname="Menu">
+        <source>Menu</source>
+        <target>Menu</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id=".N.6E9J" resname="Horoscope">
+        <source>Horoscope</source>
+        <target>Horoscope</target>
+      </trans-unit>
+      <trans-unit id="jGvAmVN" resname="Blog">
+        <source>Blog</source>
+        <target>Blog</target>
+      </trans-unit>
+      <trans-unit id="gQ0Mqto" resname="ENVOYER">
+        <source>ENVOYER</source>
+        <target>SEND</target>
+      </trans-unit>
+      <trans-unit id="Q25hAW4" resname="Play">
+        <source>Play</source>
+        <target>Play</target>
+      </trans-unit>
+      <trans-unit id="8n4i7M_" resname="La Radiesthésie : Révélateur de Mystères Cachés">
+        <source>La Radiesthésie : Révélateur de Mystères Cachés</source>
+        <target>Radiesthesia: Revealing Hidden Mysteries</target>
+      </trans-unit>
+      <trans-unit id="pbuxkdH" resname="Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour vous guider vers une harmonie éclairée.">
+        <source>Explorez les mystères cachés avec la radiesthésie. En tant que passionné dévoué à cette pratique, je vous offre clarté, sérénité et équilibre pour comprendre votre être intérieur. Plongez dans l'univers captivant de la radiesthésie, où les réponses enfouies se dévoilent pour vous guider vers une harmonie éclairée.</source>
+        <target>Explore hidden mysteries with dowsing. As a passionate devotee of this practice, I offer you clarity, serenity and balance to understand your inner self. Immerse yourself in the captivating world of dowsing, where buried answers are revealed to guide you towards enlightened harmony.</target>
+      </trans-unit>
+      <trans-unit id="BD1ipjE" resname="Radiesthésie pendulaire">
+        <source>Radiesthésie pendulaire</source>
+        <target>Pendulum radiotherapy</target>
+      </trans-unit>
+      <trans-unit id="5.U.xsC" resname="Radiesthésie médicale">
+        <source>Radiesthésie médicale</source>
+        <target>Medical Radiesthesia</target>
+      </trans-unit>
+      <trans-unit id="GW3UX.p" resname="Radiesthésie divinatoire">
+        <source>Radiesthésie divinatoire</source>
+        <target>Radiesthesia divinatory</target>
+      </trans-unit>
+      <trans-unit id="PMYoOKD" resname="Radiesthésie alimentaire">
+        <source>Radiesthésie alimentaire</source>
+        <target>Radiesthesia for food</target>
+      </trans-unit>
+      <trans-unit id="fKqvGDa" resname="Radiesthésie spirituelle">
+        <source>Radiesthésie spirituelle</source>
+        <target>Spiritual radiesthesia</target>
+      </trans-unit>
+      <trans-unit id="tkaUcV5" resname="Radiesthésie émotionnelle">
+        <source>Radiesthésie émotionnelle</source>
+        <target>Emotional Radiesthesia</target>
+      </trans-unit>
+      <trans-unit id="CpdoREZ" resname="Types de Radiesthésie">
+        <source>Types de Radiesthésie</source>
+        <target>Types of Radiesthesia</target>
+      </trans-unit>
+      <trans-unit id="BF5fqFc" resname="Clients satisfaits">
+        <source>Clients satisfaits</source>
+        <target>Satisfied customers</target>
+      </trans-unit>
+      <trans-unit id="AaVEtJv" resname="Projets Terminés">
+        <source>Projets Terminés</source>
+        <target>Finished Projects</target>
+      </trans-unit>
+      <trans-unit id="WesDQt6" resname="Heures de Travail">
+        <source>Heures de Travail</source>
+        <target>Working hours</target>
+      </trans-unit>
+      <trans-unit id="yjToSmC" resname="Explorez les Mystères de la Radiesthésie">
+        <source>Explorez les Mystères de la Radiesthésie</source>
+        <target>Explore the Mysteries of Radiesthesia</target>
+      </trans-unit>
+      <trans-unit id="HX91IEF" resname="Formulaire de Contact">
+        <source>Formulaire de Contact</source>
+        <target>Contact form</target>
+      </trans-unit>
+      <trans-unit id="Av6EX6p" resname="Horoscope hebdomadaire">
+        <source>Horoscope hebdomadaire</source>
+        <target>Weekly horoscope</target>
+      </trans-unit>
+      <trans-unit id="2.uDw7I" resname="Date de publication">
+        <source>Date de publication</source>
+        <target>Publication date</target>
+      </trans-unit>
+      <trans-unit id="3kLnYRg" resname="Aucune donnée d'horoscope disponible pour">
+        <source>Aucune donnée d'horoscope disponible pour</source>
+        <target>No horoscope data available for</target>
+      </trans-unit>
+      <trans-unit id="eJY5BfO" resname="Dates">
+        <source>Dates</source>
+        <target>Dates</target>
+      </trans-unit>
+      <trans-unit id="4KtK2wG" resname="Traits">
+        <source>Traits</source>
+        <target>Features</target>
       </trans-unit>
     </body>
   </file>

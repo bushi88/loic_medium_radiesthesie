@@ -36,6 +36,7 @@
 							<li class="menu-item-has-children">
 								<a href="{{ path('app_blog_index') }}">{% trans %}Blog{% endtrans %}</a>
 								<ul class="sub-menu">
+                                    <li><a href="{{ path('app_blog_index') }}"><i class="bx bxs-book"></i> {% trans %}Tous les articles{% endtrans %}</a></li>
 									{{ render(controller('App\\Controller\\Pages\\BlogController::menu')) }}
 								</ul>
 							</li>

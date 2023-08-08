@@ -16,30 +16,30 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class BlogController extends AbstractController
 {
     private $categories;
-    private $catRepo;
-    private $articleRepo;
-    private $translator;
 
-    public function __construct(CategoryRepository $catRepo, ArticleRepository $articleRepo, TranslatorInterface $translator)
-    {
-        $this->catRepo = $catRepo;
-        $this->articleRepo = $articleRepo;
-        $this->translator = $translator;
+    public function __construct(
+        private CategoryRepository $catRepo,
+        private ArticleRepository $articleRepo,
+        private TranslatorInterface $translator
+    ) {
     }
 
-    private function getCategories()
+    private function getCategories(Request $request)
     {
+        $locale = $request->getLocale();
+
         if ($this->categories === null) {
-            $this->categories = $this->catRepo->findAll();
+            $this->categories = $this->catRepo->findBy(['lang' => $locale]);
         }
 
         return $this->categories;
     }
 
-    public function menu(): Response
+    public function menu(Request $request): Response
     {
+        $categories = $this->getCategories($request);
         return $this->render('blog/menu.html.twig', [
-            'categories' => $this->getCategories(),
+            'categories' => $categories,
         ]);
     }
 
@@ -52,7 +52,7 @@ class BlogController extends AbstractController
     {
         if (!$article) {
             // traduction via controller
-            $message = $this->translator->trans('cette article n\'existe pas.');
+            $message = $this->translator->trans('cette article n\'existe plus.');
             $this->addFlash('warning', $message);
             return $this->redirectToRoute('app_home');
         }
@@ -61,7 +61,7 @@ class BlogController extends AbstractController
         $categoryId = $article->getCategory()->getId();
 
         // Récupérer les derniers articles de la même catégorie (à l'exception de l'article en cours)
-        $relatedArticles = $this->articleRepo->findRelatedArticles($categoryId, $article->getId(), 2);
+        $relatedArticles = $this->articleRepo->findRelatedArticles($categoryId, $article->getId(), 3);
 
         return $this->render('blog/articleDetails.html.twig', [
             'article' => $article,
@@ -83,7 +83,7 @@ class BlogController extends AbstractController
         $articles = $paginator->paginate(
             $article,
             $request->query->getInt('page', 1),
-            9
+            6
         );
 
         return $this->render('blog/articlesByCategory.html.twig', [
@@ -105,7 +105,7 @@ class BlogController extends AbstractController
         $articles = $paginator->paginate(
             $article,
             $request->query->getInt('page', 1),
-            8
+            9
         );
 
         return $this->render('blog/list_all_articles.html.twig', [

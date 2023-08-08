@@ -16,11 +16,9 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class ContactFormType extends AbstractType
 {
-    private TranslatorInterface $translator;
-
-    public function __construct(TranslatorInterface $translator)
-    {
-        $this->translator = $translator;
+    public function __construct(
+        private TranslatorInterface $translator
+    ) {
     }
 
     public function buildForm(FormBuilderInterface $builder, array $options): void
@@ -34,54 +32,55 @@ class ContactFormType extends AbstractType
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => $this->translator->trans('Veuillez saisir votre prénom'), 
+                        'message' => $this->translator->trans('Veuillez saisir votre prénom'),
                     ]),
                 ],
             ])
             ->add('lastname', TextType::class, [
                 'required' => true,
-                'label' => $this->translator->trans('Nom'), 
+                'label' => $this->translator->trans('Nom'),
                 'attr' => [
                     'class' => 'form-control'
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => $this->translator->trans('Veuillez saisir votre nom'), 
+                        'message' => $this->translator->trans('Veuillez saisir votre nom'),
                     ]),
                 ],
             ])
             ->add('email', EmailType::class, [
                 'required' => true,
-                'label' => $this->translator->trans('Email'), 
+                'label' => $this->translator->trans('Email'),
                 'attr' => [
                     'class' => 'form-control'
                 ],
                 'constraints' => [
                     new NotBlank([
-                        'message' => $this->translator->trans('Veuillez saisir votre email'), 
+                        'message' => $this->translator->trans('Veuillez saisir votre email'),
                     ]),
                     new Email([
-                        'message' => $this->translator->trans('Veuillez saisir un email valide'), 
+                        'message' => $this->translator->trans('Veuillez saisir un email valide'),
                     ]),
                 ],
             ])
             ->add('phone', TextType::class, [
                 'required' => false,
-                'label' => $this->translator->trans('Votre téléphone'), 
+                'label' => $this->translator->trans('Votre téléphone'),
                 'attr' => [
                     'class' => 'form-control'
                 ],
             ])
             ->add('object', ChoiceType::class, [
                 'required' => true,
-                'label' => $this->translator->trans('Objet de votre demande'), 
+                'label' => $this->translator->trans('Objet de votre demande'),
                 'attr' => [
                     'class' => 'form-control'
                 ],
-                'choices' => [ 
+                'choices' => [
                     $this->translator->trans('Sélectionnez un sujet') => '',
                     $this->translator->trans('Demande d\'information')  => 'demande_information',
                     $this->translator->trans('Demande de rappel')  => 'demande_rappel',
+                    $this->translator->trans('Demande de rendez-vous')  => 'demande_rdv',
                     $this->translator->trans('Autre')  => 'autre',
                 ],
             ])

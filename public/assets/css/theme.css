@@ -3195,7 +3195,7 @@ License URI:
 
 .b01_det {
     position: relative;
-    padding: 40px 40px 40px 40px;
+    padding: 10px;
 }
 
 .b01_meta {
@@ -3253,6 +3253,10 @@ License URI:
 
 .b01_det h3 a:hover {
     color: #d9480f;
+}
+
+.b01_det p {
+    min-height: 150px;
 }
 
 /*------------------------------------------------------------------------------
@@ -4647,13 +4651,13 @@ blockquote cite {
 .blog_sidebar {
     position: relative;
     background: url(../images/bg/25.png) repeat-y top center #f8f9fa;
-    padding: 50px;
+    padding: 15px;
     border-radius: 3px;
 }
 
 .blog_sidebar .widget {
     position: relative;
-    padding-bottom: 50px;
+    padding: 5px;
     margin-bottom: 50px;
     border-bottom: 4px double #e9ecef;
 }
@@ -4754,7 +4758,7 @@ blockquote cite {
     color: #868e96;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 .blog_sidebar ul li a:before {

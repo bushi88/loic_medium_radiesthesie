@@ -58,7 +58,7 @@
 						<h3>{{ 'Articles associés' | trans }}</h3>
 						<div class="row">
 							{% for article in relatedArticles %}
-								<div class="col-lg-6 col-md-6">
+                                <div class="col-lg-4 col-md-4">
 									<div class="blog_01">
 										<div class="b01_thumb">
 											<img src="{{ asset('assets/images/articles/'~ article.image) }}" alt="{{ article.title }}"/>
@@ -67,14 +67,17 @@
 											<div class="b01_meta">
 												<span>
 													<i class="bx bxs-time-five"></i>
-													<a href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }}">{{ article.createdAt|date('Y-m-d H:i') }}</a>
+													<a href="#">{{ article.createdAt|date('d-m-Y') }}</a>
 												</span>
 											</div>
 											<h3>
-												<a href="#">{{ article.title }}</a>
+												<a title="{{ article.title }}" href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }}">{{ article.title | u.truncate(20, '...', true) }}</a>
 											</h3>
+											<p class="text-justify">
+												{{ article.shortDescription | u.truncate(220, '...', true) }}
+											</p>
 											<div class="text-right">
-												<a href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }} class="learn_more_lnk">{% trans %}Lire l'article{% endtrans %}</a>
+												<a href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }}" class="learn_more_lnk">{% trans %}Lire l'article{% endtrans %}</a>
 											</div>
 										</div>
 									</div>
@@ -88,4 +91,22 @@
 	</section>
 	<!-- Single Blog Page Section End -->
 
+{% endblock %}
+
+{% block css %}
+	<style>
+		.blog_sidebar ul li a:before {
+			content: "";
+			font-family: unset;
+			font-size: initial;
+			color: initial;
+			position: initial;
+			left: -3px;
+			top: 1px;
+			color: inherit;
+			transition: inherit;
+			-moz-transition: inherit;
+			-webkit-transition: inherit;
+		}
+	</style>
 {% endblock %}

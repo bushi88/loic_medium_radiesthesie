@@ -23,9 +23,9 @@ class UserFixtures extends Fixture
         $admin->setPassword(
             $this->passwordEncoder->hashPassword($admin, 'admin')
         );
-        $admin->setUsername('Bushi88');
+        $admin->setUsername('DCH_88');
         $admin->setLastname('CH');
-        $admin->setFirstname('Djam');
+        $admin->setFirstname('Dj');
         $admin->setRoles(['ROLE_ADMIN']);
         $admin->setGender('homme');
         $admin->setBirthdate(new DateTime('08-10-1979'));
@@ -33,7 +33,7 @@ class UserFixtures extends Fixture
 
         $faker = Factory::create('fr_FR');
 
-        for ($usr = 1; $usr <= 3; $usr++) {
+        for ($usr = 1; $usr <= 4; $usr++) {
             $user = new User();
             $user->setEmail($faker->email);
             $user->setPassword(

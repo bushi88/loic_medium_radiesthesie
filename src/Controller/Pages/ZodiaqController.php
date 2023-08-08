@@ -12,13 +12,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 #[Route('/zodiaq', name: 'app_zodiaq_')]
 class ZodiaqController extends AbstractController
 {
-    private $horoscopeService;
-    private $zodiaqRepo;
-
-    public function __construct(HoroscopeService $horoscopeService, ZodiaqRepository $zodiaqRepo)
-    {
-        $this->horoscopeService = $horoscopeService;
-        $this->zodiaqRepo = $zodiaqRepo;
+    public function __construct(
+        private HoroscopeService $horoscopeService,
+        private ZodiaqRepository $zodiaqRepo
+    ) {
     }
 
     #[Route('/', name: 'all')]

@@ -57,7 +57,11 @@ class BlogController extends AbstractController
         ]);
     }
 
-    #[Route('/blog/{categorie}/{slug}', name: 'app_blog_articleDetails')]
+    #[Route([
+        'fr' =>' /blog/{categorie}/{slug}',
+        'en' =>' en/blog/{categorie}/{slug}',
+        'es' =>' es/blog/{categorie}/{slug}',
+    ], name: 'app_blog_articleDetails', methods: ['GET'])]
     public function details(Article $article): Response
     {
         if (!$article) {

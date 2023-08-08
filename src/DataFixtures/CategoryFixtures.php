@@ -136,7 +136,7 @@ class CategoryFixtures extends Fixture
             $category->setSlug($this->slugger->slug($category->getTitle()));
             $category->setDescription($value['description']);
             $category->setIcone($value['icone']);
-            $category->setIcone($value['lang']);
+            $category->setLang($value['lang']);
             $this->addReference('category_' . $key, $category);
             $manager->persist($category);
         }

@@ -60,7 +60,7 @@ License URI:
     padding-left: 45px;
     padding-top: 2px;
     min-height: 30px;
-    margin: 18px 0;
+    margin: 25px 0;
 }
 
 .info_item i {
@@ -81,7 +81,7 @@ License URI:
     font-size: 12px;
     font-weight: 500;
     color: #fff;
-    line-height: 1.4;
+    line-height: .8;
     margin: 0 0 9px;
 }
 
@@ -1619,7 +1619,7 @@ License URI:
 / 6. Service Section
 ------------------------------------------------------------------------------*/
 .service_01 {
-    min-height: 39rem;
+   /* min-height: 39rem;*/
     position: relative;
     background: #FFF;
     border-radius: 3px;

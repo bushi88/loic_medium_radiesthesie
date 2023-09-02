@@ -133,22 +133,6 @@
 								<div class="sr01_thumb">
 									<img src="{{ asset('assets/images/articles/'~ article.image) }}" alt="{{ article.title }}"/>
 								</div>
-								<div class="sr01_dtl">
-									<i class='{{ article.category.icone }}'></i>
-									<h3 class="">
-										<a href="#">{{ article.title }}</a>
-									</h3>
-									<p>
-										<ins>{% trans %}catégorie{% endtrans %}</ins>
-										:
-										<span class="font-weight-bold">
-											{{ article.category.title }}
-										</span>
-									</p>
-									<div class="text-justify">
-										{{ article.shortDescription | raw }}
-									</div>
-								</div>
 								<div class="blog_01">
 									<div class="b01_det">
 										<div class="b01_meta">
@@ -156,7 +140,10 @@
 												<i class="bx bxs-time-five"></i>
 												<a href="#">{{ article.createdAt|date('Y-m-d H:i') }}</a>
 											</span>
-										</div>
+		
+										</div>														<h3 class="">
+										<a href="#">{{ article.title }}</a>
+									</h3>
 										<div class="text-right">
 											<a href="{{ path('app_blog_articleDetails', {'categorie': article.category.slug, 'slug': article.slug}) }}" class="learn_more_lnk">{% trans %}Lire l'article{% endtrans %}</a>
 										</div>
@@ -167,18 +154,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="notes">
-						{% trans %}Explorez les Mystères de la Radiesthésie{% endtrans %}
-						<a href="https://calendly.com/eirl-omont/60min" target="_blank">
-							<span class="ml-3 text-dark">
-								{% trans %}Demandez une Consultation{% endtrans %}<i class="bx bx-right-arrow-alt"></i>
-							</span>
-						</a>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</section>
 	<!-- Blog Section End -->

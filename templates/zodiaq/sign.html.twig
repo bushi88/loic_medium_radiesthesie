@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-	{{ slug }}
-{% endblock %}
+{% block title %}Horoscope {{ slug }} du jour, le {{ 'now' | date('d - m - Y') }}{% endblock %}
+{% block desc %}L'horoscope du jour de la {{ slug }} gratuit. Amour, travail, couple, finance, bien-être, découvrez ce qui vous attend aujourd'hui. Prévisions 100% exclusives{% endblock %}
+
 
 {% block body %}
 	{{ include("_partials/banner.html.twig", {'name': slug | capitalize }) }}
@@ -12,7 +12,7 @@
 		<div class="container">
 			{% if horoscopeData is not empty %}
 				{% for horoscope in horoscopeData %}
-					<h2 class="text-white">{% trans %}Horoscope hebdomadaire{% endtrans %}<br>{{ horoscope.title }}</h2>
+					<h2 class="text-white">{% trans %}Horoscope hebdomadaire{% endtrans %}</h2>
 					<p>
 						{{ horoscope.description | raw }}
 					</p>

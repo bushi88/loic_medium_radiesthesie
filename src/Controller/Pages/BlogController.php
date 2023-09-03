@@ -61,7 +61,7 @@ class BlogController extends AbstractController
         $categoryId = $article->getCategory()->getId();
 
         // Récupérer les derniers articles de la même catégorie (à l'exception de l'article en cours)
-        $relatedArticles = $this->articleRepo->findRelatedArticles($categoryId, $article->getId(), 3);
+        $relatedArticles = $this->articleRepo->findRelatedArticles($categoryId, $article->getId(), 2);
 
         return $this->render('blog/articleDetails.html.twig', [
             'article' => $article,

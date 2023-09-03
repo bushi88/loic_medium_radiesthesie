@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-	{% trans %}Horoscope{% endtrans %}
-{% endblock %}
+{% block title %}Horoscope du {{ 'now' | date('d - m - Y') }} : Prévisions pour chaque Signe Zodiacal{% endblock %}
+{% block desc %}Découvrez les mystères des signes du zodiaque et explorez votre avenir avec nos horoscopes précis. Laissez les étoiles vous guider vers une vie plus éclairée et épanouissante{% endblock %}
+
 
 {% block body %}
 	{{ include("_partials/banner.html.twig", {'name': 'Horoscope' | trans }) }}

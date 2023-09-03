@@ -2,43 +2,24 @@
 <footer class="footer_01 zodiaq_bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-4">
+			<div class="col-12 col-md-3">
 				<div class="widget">
 					<div class="about_widget">
 						<div class="aw_logo">
 							<a href="{{ path('app_home') }}">
-								<img src="{{ asset('assets/images/logo2.png') }}" alt="logo"/>
+								<img src="{{ asset('assets/images/logo-blanc.png') }}" alt="logo"/>
 							</a>
 						</div>
 						<p>
 							{% trans %}La radiesthésie est le medium qui ouvre les portes de la médecine parallèle, où l'intuition se mêle à la science pour dévoiler les mystères de la guérison.{% endtrans %}
 						</p>
-						<div class="fo_social">
-							<a href="#">
-								<i class="bx bxl-facebook"></i>
-							</a>
-							<a href="#">
-								<i class="bx bxl-twitter"></i>
-							</a>
-							<a href="#">
-								<i class="bx bxl-dribbble"></i>
-							</a>
-							<a href="#">
-								<i class="bx bxl-linkedin"></i>
-							</a>
-							<a href="#">
-								<i class="bx bxl-skype"></i>
-							</a>
-						</div>
+						
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-8 d-flex flex-column align-items-end justify-content-end">
+			<div class="col-12 col-md-3 offset-md-6">
 				<div class="my-2">
 					<a href="{{ path('app_cgu') }}" class="text-warning">{% trans %}Mentions légales{% endtrans %}</a>
-				</div>
-				<div>
-					<a href="{{ path('app_cgu') }}" class="text-warning">{% trans %}Conditions d'utilisation{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -54,10 +35,8 @@
 				<div class="copbar"></div>
 				<p class="copies">
 					&copy;
-					<script>
-						document.write(new Date().getFullYear())
-					</script>
-					<a href="#">Loic</a>. {% trans %}Tous droits réservés{% endtrans %}.
+					{{ 'now' | date('Y') }}
+					<a href="#">jabamiah</a>. {% trans %}Tous droits réservés{% endtrans %}.
 				</p>
 				<p>
 					{% for locale in locales %}
@@ -65,6 +44,8 @@
 						{% if app.request.attributes.get('_route') == 'app_blog_articleDetails' %}
 							{% set query = {'_locale': locale, 'slug': app.request.attributes.get('slug'), 'categorie': app.request.attributes.get('categorie')} %}
 						{% elseif app.request.attributes.get('_route') == 'app_blog_articlesByCategory' %}
+							{% set query = {'_locale': locale, 'slug': app.request.attributes.get('slug')} %}
+						{% elseif app.request.attributes.get('_route') == 'app_zodiaq_sign' %}
 							{% set query = {'_locale': locale, 'slug': app.request.attributes.get('slug')} %}
 						{% else %}
 							{% set query = {'_locale': locale} %}

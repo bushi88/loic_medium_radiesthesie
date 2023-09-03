@@ -330,11 +330,11 @@ License URI:
 
 .logo_01 {
     position: relative;
-    padding: 0px;
+    padding: 32px 0 31px;
 }
 
 .logo_01 img {
-    height: 80px;
+    height: 37px;
     width: auto;
 }
 
@@ -1101,7 +1101,7 @@ License URI:
 
 .logo_02 img,
 .logo_01 img {
-    height: 80px;
+    height: 37px;
     width: auto;
 }
 

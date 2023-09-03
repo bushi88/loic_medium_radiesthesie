@@ -1,8 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-	{{ articles.items|first.category.title }}
-{% endblock %}
+{% block title %}{{ articles.items|first.category.title }}{% endblock %}
 
 {% block body %}
 

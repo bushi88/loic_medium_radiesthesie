@@ -19,26 +19,29 @@
 						</div>
 
 						<ul>
-							<li class="current-menu-item">
+							<li class="{{ app.request.get('_route') == 'app_home' ? 'current-menu-item' }}">
 								<a href="{{ path('app_home') }}">{% trans %}Accueil{% endtrans %}</a>
 							</li>
-							<li class="">
+							<li class="{{ app.request.get('_route') == 'app_about' ? 'current-menu-item' }}">
 								<a href="{{ path('app_about') }}">{% trans %}À propos{% endtrans %}</a>
 							</li>
 							<li>
 								<a href="{{ path('app_home') }}#contact_section">{% trans %}Contact{% endtrans %}</a>
 							</li>
 							{% if app.request.locale == 'fr' %}
-								<li class="">
+								<li class="
+										{{ app.request.get('_route') == 'app_zodiaq_all' ? 'current-menu-item' }}
+										{{ app.request.get('_route') == 'app_zodiaq_sign' ? 'current-menu-item' }}
+								">
 									<a href="{{ path('app_zodiaq_all') }}">{% trans %}Horoscope{% endtrans %}</a>
 								</li>
 							{% endif %}
-							<li class="menu-item-has-children">
+							<li class="
+										{{ app.request.get('_route') == 'app_blog_index' ? 'current-menu-item' }}
+										{{ app.request.get('_route') == 'app_blog_articlesByCategory' ? 'current-menu-item' }}
+										{{ app.request.get('_route') == 'app_blog_articleDetails' ? 'current-menu-item' }}
+							">
 								<a href="{{ path('app_blog_index') }}">{% trans %}Blog{% endtrans %}</a>
-								<ul class="sub-menu">
-                                    <li><a href="{{ path('app_blog_index') }}"><i class="bx bxs-book"></i> {% trans %}Tous les articles{% endtrans %}</a></li>
-									{{ render(controller('App\\Controller\\Pages\\BlogController::menu')) }}
-								</ul>
 							</li>
 						</ul>
 					</nav>

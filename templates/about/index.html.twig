@@ -1,7 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% trans %}Développez Votre Intuition avec la Radiesthésie : Équilibre et Révélation{% endtrans %}{% endblock %}
-{% block desc %}{% trans %}Radiesthésie : Énergie, équilibre, et bien-être avec des techniques ancestrales pour harmoniser votre vie et votre environnement{% endtrans %}{% endblock %}
+{% block title %}
+	{% trans %}Développez Votre Intuition avec la Radiesthésie : Équilibre et Révélation{% endtrans %}
+{% endblock %}
+{% block desc %}
+	{% trans %}Radiesthésie : Énergie, équilibre, et bien-être avec des techniques ancestrales pour harmoniser votre vie et votre environnement{% endtrans %}
+{% endblock %}
 
 
 {% block body %}
@@ -62,19 +66,18 @@
 				Si vous avez besoin de réponses, de guérison ou de soutien dans votre vie, n'hésitez pas à nous contacter pour une consultation avec notre medium radiesthésiste. Nous sommes là pour vous aider à trouver la clarté et le réconfort dont vous avez besoin.
 				{% endtrans %}
 			</p>
-			<p class="contact-info text-white">
-				<strong>Phone :</strong>
-				06.86.65.63.58<br>
-				<strong>Email :</strong>
-				<a href="{{ path('app_home') }}#contact_section" class="text-white">contact@contact.com</a>
-			</p>
-			<div class="notes">
-				<a href="https://calendly.com/eirl-omont/60min" target="_blank">
-					<span>
-						{% trans %}Demandez une Consultation{% endtrans %}<i class="bx bx-right-arrow-alt"></i>
-					</span>
-				</a>
-			</div>
-		</section>
+			<p
+				class="contact-info text-white">
+				{# <strong>Phone :</strong>
+				06.86.65.63.58<br> #}
+				<strong>Email : </strong>contact@jabamiah.eu</p>
+		</a>
+	</p>
+	<div class="notes">
+		<a href="https://calendly.com/eirl-omont/60min" target="_blank">
+			<span>
+				{% trans %}Demandez une Consultation{% endtrans %}<i class="bx bx-right-arrow-alt"></i>
+			</span>
+		</a>
 	</div>
-{% endblock %}
+</section></div>{% endblock %}
